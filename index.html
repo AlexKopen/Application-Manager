@@ -5,7 +5,31 @@
 </head>
 <body>
 
-<p>Main interface page</p>
+<h1>Sample Form</h1>
+
+<div id="form-container">
+	<form id="simple-form">
+		<span>First name:</span><br>
+		<input type="text" name="firstname" value = "Alex" ><br>
+		<span>Last name:</span><br>
+		<input type="text" name="lastname" value = "Kopen" ><br>
+		<span>Address:</span><br>
+		<input type="text" name="address" value = "8581 shadow crk"><br>	
+		<input type="submit" value="Submit">
+	</form>
+</div>
+
+<h1>Form Output</h1>
+
+<input type="button" value="Display" id="display-button">
+
+<div id="form-display">
+	<form>
+	</form>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="form.js"></script>
 
 </body>
 </html>
