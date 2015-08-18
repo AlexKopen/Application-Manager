@@ -16,7 +16,9 @@ $(document).ready(function() {
 	$('#display-button').click(function(event) {
 		var jsonAsArray = $.parseJSON(jsonData);
 		for (var i = 0; i < jsonAsArray.length; i++) {
-			$('#form-display form').append('<span>' + spanFields.eq(i).text() + '</span><br>' + '<input type="text" name = "' + jsonAsArray[i].name + '"' + 'value = "' + jsonAsArray[i].value + '"><br>');
+			$('#form-display form').append('<span>' + spanFields.eq(i).text() + '</span><br>'
+				+ '<input type="text" name = "' + jsonAsArray[i].name
+				+ '"' + 'value = "' + jsonAsArray[i].value + '"><br>');
 		};		
 	});
 });
