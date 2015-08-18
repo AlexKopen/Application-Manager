@@ -14,6 +14,7 @@ $(document).ready(function() {
 	//Display JSON as a form
 	
 	$('#display-button').click(function(event) {
+		console.log(jsonData);
 		var jsonAsArray = $.parseJSON(jsonData);
 		for (var i = 0; i < jsonAsArray.length; i++) {
 			$('#form-display form').append('<span>' + spanFields.eq(i).text() + '</span><br>'
