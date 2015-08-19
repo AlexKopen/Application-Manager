@@ -10,17 +10,12 @@
 <h1>Applications</h1>
 
 
-<div class="single-app">
-	<?php
+<?php
 
-	require 'connect.php';
-	require 'fetch_all_applications.php';
+require 'connect.php';
+require 'fetch_all_applications.php';
 
-	?>
-</div>
-
-
-
+?>
 
 </body>
 </html>
