@@ -1,10 +1,21 @@
 $(document).ready(function() {
 	//Display JSON as a form
 
-	console.log(jsonData);
 	var jsonAsArray = $.parseJSON(jsonData);
+
+	var formInputs = $('form input');
+	var currentValue = '';
+
+	//Change value of input fields to match with the appropriate name from the JSON array
 	for (var i = 0; i < jsonAsArray.length; i++) {
-		$('#form-display form').append('<input type="text" name = "' + jsonAsArray[i].name
-			+ '"' + 'value = "' + jsonAsArray[i].value + '"><br>');
-	};	
+		currentValue = jsonAsArray[i].value;
+
+		formInputs.each(function() {
+			if ($(this).attr('name') == jsonAsArray[i].name) {
+				$(this).val(jsonAsArray[i].value);
+				return;
+			};
+		});
+	};
+
 });

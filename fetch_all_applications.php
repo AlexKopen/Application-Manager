@@ -1,6 +1,6 @@
 <?php 
 
-$sql = "SELECT * FROM `applications` ORDER BY `trip`";
+$sql = "SELECT * FROM applications ORDER BY trip";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
@@ -17,7 +17,7 @@ if ($result->num_rows > 0) {
     	$applyDateFormatted = $applyDate->format('l\, F jS\, Y');    	
 
     	if ($row['trip'] != $currentTrip){
-    		echo '<h1>Trip of: ' . $tripDateFormatted . '</h1>';
+    		echo '<h1>Trip of ' . $tripDateFormatted . '</h1>';
     		$currentTrip = $row['trip'];
     	}
 

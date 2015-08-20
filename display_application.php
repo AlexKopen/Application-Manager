@@ -19,8 +19,7 @@
 	?>
 
 	<div id="form-display">
-		<form>
-		</form>
+		<?php require('form_template.php'); ?>
 	</div>
 
 </div>

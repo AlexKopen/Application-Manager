@@ -1,6 +1,8 @@
 <?php 
 
-$sql = "SELECT * FROM applications";
+$id = htmlspecialchars($_GET['id']);
+
+$sql = "SELECT * FROM applications WHERE id = $id";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
