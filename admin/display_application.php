@@ -7,9 +7,6 @@
 <body>
 
 
-<h1>Single Application</h1>
-
-
 <div class="single-app">
 	<?php
 
