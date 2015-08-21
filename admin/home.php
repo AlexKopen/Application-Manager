@@ -1,0 +1,20 @@
+<?php 
+	require ('private.php'); 
+?>
+
+<?php 
+	require ('header.php'); 
+?>
+
+<h1>Applications</h1>
+
+
+<?php
+
+require ('connect.php');
+require ('fetch_all_applications.php');
+
+?>
+
+</body>
+</html>

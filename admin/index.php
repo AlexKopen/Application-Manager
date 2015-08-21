@@ -7,15 +7,14 @@
 <body>
 
 
-<h1>Applications</h1>
+<h1>Login to Application Manager</h1>
 
 
-<?php
-
-require 'connect.php';
-require 'fetch_all_applications.php';
-
-?>
+<form action="login.php">
+	<input name="username" value="username">
+	<input name="password" value="password">
+	<input type="submit" value="Login">
+</form>
 
 </body>
 </html>
