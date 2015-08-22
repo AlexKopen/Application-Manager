@@ -11,7 +11,6 @@
 
 <?php
 
-require ('connect.php');
 require ('fetch_all_applications.php');
 
 ?>

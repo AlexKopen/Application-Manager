@@ -7,6 +7,8 @@
 	unset($_SESSION['user']); 
 	 
 	// Redirect
-	header("Location: login.php"); 
-	die("Redirecting to: login.php");
+	header("Location: index.php"); 
+	die("Redirecting to: index.php");
+
+	$conn->close();
 ?>

@@ -1,17 +1,16 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Application Manager</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
+<?php 
+	require ('private.php'); 
+?>
+
+<?php 
+	require ('header.php'); 
+?>
 
 
 <div class="single-app">
 	<?php
 
-	require 'connect.php';
-	require 'fetch_application.php';
+	require ('fetch_application.php');
 
 	?>
 

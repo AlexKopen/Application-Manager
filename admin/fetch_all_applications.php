@@ -1,4 +1,8 @@
 <?php 
+    require ('private.php'); 
+?>
+
+<?php 
 
 $sql = "SELECT * FROM applications ORDER BY trip";
 $result = $conn->query($sql);

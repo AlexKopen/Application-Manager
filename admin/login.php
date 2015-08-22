@@ -40,6 +40,7 @@
 			}
 
 		} else {
+			// Invalid username
 			header("Location: index.php");
 			die("Redirecting to: index.php");
 		}
@@ -54,8 +55,8 @@
 			$_SESSION['user'] = $row; 
 			 
 			// Redirect the user to desired page 
-			header("Location: private.php"); 
-			die("Redirecting to: private.php"); 
+			header("Location: home.php"); 
+			die("Redirecting to: home.php"); 
 		} 
 		else { 
 			// Failed login
@@ -67,5 +68,7 @@
 		header("Location: index.php"); 
 		die("Redirecting to: index.php"); 
 	}
+
+	$conn->close();	
 	 
 ?> 

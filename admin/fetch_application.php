@@ -1,4 +1,8 @@
 <?php 
+    require ('private.php'); 
+?>
+
+<?php 
 
 $id = htmlspecialchars($_GET['id']);
 
