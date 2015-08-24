@@ -6,43 +6,29 @@
 
 	// Entered username
 	$username = $_POST['username'];
-	
-	// Check for entered data
-	if(!empty($_POST)) { 
+	$login_ok = false;
 
-		// Grab row
-		$query = "SELECT * FROM users WHERE username = $username";
+   /* Create a prepared statement */
+	if($stmt = $conn -> prepare("SELECT password FROM users WHERE username = ?")) {
 
-		// Prevent injection
-		$stmt = $conn->prepare($query);
-		$stmt->bind_param('s', $name);
+		// Statement functionality
+		$stmt -> bind_param("s", $username);
+		$stmt -> execute();
+		$stmt -> bind_result($result);
+		$stmt -> fetch();
 
-		$stmt->execute();
+		$encrypted_password = $result;
 
-		$result = $stmt->get_result();
+		$stmt -> close();
 
-		// See if user exists
-		if ($result->num_rows > 0) {
+		$check_password = hash('sha256', $_POST['password'] . $row['salt']);		
 
-			// Validate password with sha256 using salt
-			while ($row = $result->fetch_assoc()) {
-		    	$login_ok = false;			
-
-				$check_password = hash('sha256', $_POST['password'] . $row['salt']);
-
-				for($round = 0; $round < 65536; $round++) { 
-					$check_password = hash('sha256', $check_password . $row['salt']); 
-				} 
-				 
-				if($check_password === $row['password']) {
-					$login_ok = true; 
-				}
-			}
-
-		} else {
-			// Invalid username
-			header("Location: index.php");
-			die("Redirecting to: index.php");
+		for($round = 0; $round < 65536; $round++) { 
+			$check_password = hash('sha256', $check_password . $row['salt']); 
+		} 
+		 
+		if($check_password === $encrypted_password) {
+			$login_ok = true; 
 		}
 
 		// Login success
@@ -63,12 +49,7 @@
 			header("Location: index.php"); 
 			die("Redirecting to: index.php"); 
 		} 
-	} else{
-		// No username entered
-		header("Location: index.php"); 
-		die("Redirecting to: index.php"); 
-	}
 
-	$conn->close();	
+	}
 	 
 ?> 
