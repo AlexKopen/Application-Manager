@@ -15,5 +15,6 @@ require ('fetch_all_applications.php');
 
 ?>
 
-</body>
-</html>
+<?php 
+	require ('footer.php'); 
+?>

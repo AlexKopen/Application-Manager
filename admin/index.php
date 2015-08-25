@@ -9,7 +9,7 @@
 		die('Redirecting to home.php'); 
 
 	}
-	
+
  ?>
 
 <!DOCTYPE html>
@@ -21,9 +21,9 @@
 </head>
 <body>
 
+<img src="logo.png">
 
 <div id = "login-container">
-	<img src="logo.png">
 
 	<h1>Application Manager</h1>
 

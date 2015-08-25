@@ -7,6 +7,33 @@ img {
 	display: block;
     max-width: 100%;
     max-height: 100%;
+    width: 500px;
+}
+
+a {
+	color: #000000;
+}
+
+#container{
+	max-width: 1920px;
+	margin: 0 auto;
+}
+
+#header {
+	min-height: 100px;
+}
+
+#left-header, #right-header{
+	width: 50%;
+	float: left;
+}
+
+#right-header p {
+	text-align: right;
+}
+
+#right-header a {
+	text-decoration: none;
 }
 
 #login-container{
@@ -22,6 +49,13 @@ img {
     font-size: 20px;
 }
 
+.single-trip{
+	overflow: hidden;
+}
+
 .single-app{
 	border: 1px solid black;
+	width: 400px;
+	float: left;
+	margin: 15px 0 0 15px;
 }
