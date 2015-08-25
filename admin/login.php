@@ -44,12 +44,12 @@
 						header("Location: home.php"); 
 						die("Redirecting to: home.php"); 
 					} else { 
-						// Failed login
+						// Invalid password
 						header("Location: index.php"); 
 						die("Redirecting to: index.php"); 
-					} 
-
+					}
 				}
+
 			} else {
 				// User does not exist
 				header("Location: index.php"); 
@@ -61,6 +61,7 @@
 			header("Location: index.php"); 
 			die("Redirecting to: index.php"); 		    
 		}
+		
 	} else{
 		// Form was not submitted
 		header("Location: index.php"); 

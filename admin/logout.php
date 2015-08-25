@@ -2,9 +2,12 @@
 
 	// DB credentials and session start
 	require("connect.php");
-	 
-	// Unset user from session
-	unset($_SESSION['user']); 
+
+	// Remove all session variables
+	session_unset();
+
+	// Destroy the session 
+	session_destroy();
 	 
 	// Redirect
 	header("Location: index.php"); 

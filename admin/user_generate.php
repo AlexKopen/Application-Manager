@@ -1,7 +1,7 @@
 <?php 
 
 
-         $desiredPassword = 'crapidsangel9';
+         $desiredPassword = '';
         // A salt is randomly generated here to protect again brute force attacks 
         // and rainbow table attacks.  The following statement generates a hex 
         // representation of an 8 byte salt.  Representing this in hex provides 
