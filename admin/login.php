@@ -33,12 +33,12 @@
 
 					// Login success
 					if($login_ok) { 
-						// Remove sensitive data from $result for best practice
+						// Remove sensitive data from $row for best practice
 						unset($row['salt']); 
 						unset($row['password']); 
 						 
 						// Session user data
-						$_SESSION['user'] = $result; 
+						$_SESSION['user'] = $row; 
 						 
 						// Redirect the user to desired page 
 						header("Location: home.php"); 
@@ -61,7 +61,7 @@
 			header("Location: index.php"); 
 			die("Redirecting to: index.php"); 		    
 		}
-		
+
 	} else{
 		// Form was not submitted
 		header("Location: index.php"); 
