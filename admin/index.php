@@ -12,16 +12,9 @@
 
  ?>
 
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Application Manager</title>
-	<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-
-<img src="logo.png">
+<?php 
+	require ('header.php');
+ ?>
 
 <div id = "login-container">
 
@@ -34,5 +27,6 @@
 	</form>
 </div>
 
-</body>
-</html>
+<?php 
+	require ('footer.php');
+ ?>

@@ -14,18 +14,14 @@ a {
 	color: #000000;
 }
 
-#container{
+.container{
 	max-width: 1920px;
 	margin: 0 auto;
+	padding: 10px;
 }
 
-#header {
-	min-height: 100px;
-}
-
-#left-header, #right-header{
-	width: 50%;
-	float: left;
+#header #logo-container{
+	width: 300px;
 }
 
 #right-header p {
@@ -49,13 +45,57 @@ a {
     font-size: 20px;
 }
 
-.single-trip{
-	overflow: hidden;
+table {
+	width: 100%;
 }
 
-.single-app{
-	border: 1px solid black;
-	width: 400px;
-	float: left;
-	margin: 15px 0 0 15px;
+tr {
+	text-align: left;
+	height: 40px;
+}
+
+.first-tr{
+	background: #4183bf;
+	color: #ffffff;
+}
+
+.odd-tr{
+	background: #d9e5f1;
+}
+
+td {
+	padding-left: 5px;
+}
+
+table.dates td{
+	width: 50%;
+}
+
+table.applications td{
+	width: 25%;
+}
+
+.delete {
+    background-color: #d9534f;
+    width: 80px;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 10px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.mini-container {
+	padding: 0 15px;
+}
+
+.select-container{
+	padding-right: 10px;
+}
+
+select {
+    width: 100%;
+    height: 32px;
+    font-size: 20px;	
 }
