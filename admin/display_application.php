@@ -17,11 +17,7 @@
 </head>
 <body>
 
-<?php
-
-require ('fetch_application.php');
-
-?>
+<?php require ('fetch_application.php'); ?>
 
 <div id="form-display">
 	<div class="container">

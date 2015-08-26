@@ -10,25 +10,25 @@
 
 	<div class="pure-g">
 		<div class="pure-u-1-2">
-			<h1>Open Trips</h1>
-
-			<?php
-
-				require ('fetch_all_dates.php');
-
-			?>
+			<div class = "mini-container">
+				<h1>Open Trips</h1>
+				<div id = "open-trips">
+					<?php
+						require ('fetch_all_dates.php');
+					?>
+				</div>
+			</div>
 		</div>
 
 		<div class="pure-u-1-2">
 			<div class = "mini-container">
 				<h1>Add Trip</h1>
-				<div class="pure-g">
-				<?php
-
-					require ('generate_dates.php');
-
-				?>
-				</div>
+				<form id="add-trip">
+					<?php
+						require ('generate_dates.php');
+					?>
+					<input id = "add-trip-submit" type = "submit" value="Add">
+				</form>
 			</div>			
 		</div>
 
@@ -43,6 +43,9 @@
 	?>
 
 </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="home.functions.js"></script>
 
 <?php 
 	require ('footer.php'); 
