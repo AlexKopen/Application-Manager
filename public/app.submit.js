@@ -6,6 +6,14 @@ $(document).ready(function() {
 	$('#applicant-form').submit(function(event) {
 		jsonData = JSON.stringify($(this).serializeArray());
 		console.log(jsonData);
+
+		$.ajax({
+			url: 'application_insertion.php',
+			type: 'GET',
+			data: {json: jsonData}
+		});
+		
+
 		event.preventDefault();
 	});
 

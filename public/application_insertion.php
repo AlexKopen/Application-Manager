@@ -15,7 +15,7 @@ if ($conn->connect_error) {
 $name = "";
 $date = "";
 $trip = "";
-$json = "";
+$json = $_GET['json'];
 
 $sql = "INSERT INTO applications (name, date, trip, json) VALUES ('$name', '$date', '$trip', '$json')";
 
