@@ -17,15 +17,20 @@ $date = "";
 $trip = "";
 $json = $_GET['json'];
 
-$sql = "INSERT INTO applications (name, date, trip, json) VALUES ('$name', '$date', '$trip', '$json')";
+echo $name . '<br>';
+echo $date . '<br>';
+echo $trip . '<br>';
+echo $json . '<br>';
 
-if ($conn->query($sql) === TRUE) {
-    echo "New record created successfully";
-} else {
-    echo "Error: " . $sql . "<br>" . $conn->error;
-}
+// $sql = "INSERT INTO applications (name, date, trip, json) VALUES ('$name', '$date', '$trip', '$json')";
 
-$conn->close();
+// if ($conn->query($sql) === TRUE) {
+//     echo "New record created successfully";
+// } else {
+//     echo "Error: " . $sql . "<br>" . $conn->error;
+// }
+
+// $conn->close();
 
  ?>
  

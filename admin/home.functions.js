@@ -11,7 +11,7 @@ $(document).ready(function() {
 			url: 'delete_date.php',
 			type: 'GET',
 			data: {date: removeDate},
-			success: function (data){
+			success: function (){
 				// Update table
 				$.ajax({
 					url: 'fetch_all_dates.php',

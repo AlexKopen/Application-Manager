@@ -5,13 +5,19 @@ $(document).ready(function() {
 
 	$('#applicant-form').submit(function(event) {
 		jsonData = JSON.stringify($(this).serializeArray());
-		console.log(jsonData);
 
-		$.ajax({
-			url: 'application_insertion.php',
-			type: 'GET',
-			data: {json: jsonData}
-		});
+		var name = $.trim($( "input[name*='first-name']" ).val()) + ' ' + $.trim($( "input[name*='middle-name']" ).val()) + ' ' + $.trim($( "input[name*='last-name']" ).val());
+
+		console.log(name);
+
+		// $.ajax({
+		// 	url: 'application_insertion.php',
+		// 	type: 'GET',
+		// 	data: {json: jsonData},
+		// 	success: function (data){
+		// 		console.log(data);	
+		// 	}			
+		// });
 		
 
 		event.preventDefault();
