@@ -51,15 +51,15 @@
 				</div>
 				<div class="row item indent">
 					<div class="col-xs-4">
-						<input type="text" name = "first-name" /><br>
+						<input type="text" name = "first-name" value="temp-first" /><br>
 						<p>First</p>
 					</div>
 					<div class="col-xs-4">
-						<input type="text" name = "middle-name" /><br>
+						<input type="text" name = "middle-name" value="temp-middle" /><br>
 						<p>Middle</p>
 					</div>
 					<div class="col-xs-4">
-						<input type="text" name = "last-name" /><br>
+						<input type="text" name = "last-name" value="temp-last" /><br>
 						<p>Last</p>
 					</div>										
 				</div>
@@ -424,7 +424,15 @@
 
 		</form>
 	</div>
-	
+
+<script type="text/javascript">
+	<?php 
+
+		echo('var tripData = \'' . $_GET['trip'] . '\';');
+
+	 ?>
+
+</script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="app.submit.js"></script>
 

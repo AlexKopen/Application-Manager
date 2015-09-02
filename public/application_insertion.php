@@ -12,25 +12,21 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-$name = "";
-$date = "";
-$trip = "";
+$name = $_GET['name'];
+$date = date('Y-m-d');
+$trip = $_GET['trip'];
 $json = $_GET['json'];
 
-echo $name . '<br>';
-echo $date . '<br>';
-echo $trip . '<br>';
-echo $json . '<br>';
 
-// $sql = "INSERT INTO applications (name, date, trip, json) VALUES ('$name', '$date', '$trip', '$json')";
+$sql = "INSERT INTO applications (name, date, trip, json) VALUES ('$name', '$date', '$trip', '$json')";
 
-// if ($conn->query($sql) === TRUE) {
-//     echo "New record created successfully";
-// } else {
-//     echo "Error: " . $sql . "<br>" . $conn->error;
-// }
+if ($conn->query($sql) === TRUE) {
+    echo "success";
+} else {
+    echo "Error: " . $sql . "<br>" . $conn->error;
+}
 
-// $conn->close();
+$conn->close();
 
  ?>
  
