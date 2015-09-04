@@ -28,20 +28,18 @@ a {
 	width: 300px;
 }
 
-#home h1{
+#home h1 {
 	text-align: center;
 }
 
-#home p{
+#home p {
 	font-size: 20px;
 }
 
-/*#home .odd-tr a{
-	color: #ffffff;
-}*/
-
 #home table {
 	width: 100%;
+	max-width: 1000px;
+	margin: 0 auto;
 }
 
 #home tr {
@@ -50,11 +48,39 @@ a {
 	border: 1px solid #272424;
 }
 
-#home .odd-tr{
+#home .odd-tr {
 	/*border-bottom: 1px solid #272424;*/
 /*	color: #ffffff;*/
 }
 
 #home td {
 	padding-left: 5px;
+}
+
+#app.container{
+	max-width: 950px;
+}
+
+#app .pure-g{
+/*	padding-left: 10px;*/
+}
+
+#app p {
+	line-height: 34px;
+}
+
+#app h3 {
+    background: #36bfbb;
+    color: #ffffff;
+    height: 40px;
+    line-height: 40px;
+    font-size: 30px;
+}
+
+#app input {
+	width: 100%;
+}
+
+#app .indent {
+	margin-left: 45px;
 }
