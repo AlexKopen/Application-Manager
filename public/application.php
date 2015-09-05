@@ -31,15 +31,15 @@
 		</div>
 		<div class="pure-g indent">
 			<div class="pure-u-1-3">
-				<input type="text" name="first-name" />
+				<input type="text" name="first-name" class="third-input" />
 				<p>First</p>
 			</div>
 			<div class="pure-u-1-3">
-				<input type="text" name="middle-name" />
+				<input type="text" name="middle-name" class="third-input" />
 				<p>Middle</p>
 			</div>
 			<div class="pure-u-1-3">
-				<input type="text" name="last-name" />
+				<input type="text" name="last-name" class="third-input" />
 				<p>Last</p>
 			</div>										
 		</div>
@@ -52,27 +52,27 @@
 		</div>
 		<div class="pure-g indent">
 			<div class="pure-u-1-1">
-				<input type="text" name = "address" /><br>
+				<input type="text" name = "address" />
 				<p>Street Address</p>
 			</div>									
 		</div>
 		<div class="pure-g indent">
 			<div class="pure-u-1-1">
-				<input type="text" name = "address-two" /><br>
+				<input type="text" name = "address-two" />
 				<p>Address Line 2</p>
 			</div>									
 		</div>
 		<div class="pure-g indent">
 			<div class="pure-u-1-3">
-				<input type="text" name = "city" /><br>
+				<input type="text" name = "city" class="third-input" />
 				<p>City</p>
 			</div>
 			<div class="pure-u-1-3">
-				<input type="text" name = "state" /><br>
+				<input type="text" name = "state" class="third-input" />
 				<p>State / Province / Region</p>
 			</div>
 			<div class="pure-u-1-3">
-				<input type="text" name = "zip" /><br>
+				<input type="text" name = "zip" class="third-input" />
 				<p>Zip / Postal Code</p>
 			</div>													
 		</div>
@@ -84,16 +84,15 @@
 			</div>
 		</div>
 		<div class="pure-g indent">
-			<div class="pure-u-1-4">
+			<div class="pure-u-1-1">
 				<input type="text" name = "home-phone-1" class = "phone" /> -
 				<input type="text" name = "city" name = "home-phone-2" class = "phone" /> -
-				<input type="text" name = "home-phone-3" class = "phone" /><br>
+				<input type="text" name = "home-phone-3" class = "phone" />
 				<p>Home</p>
-			</div>
-			<div class="pure-u-1-4">
-				<input type="text" name = "cell-phone-1" class = "phone" /> -
-				<input type="text" name = "cell-phone-2" class = "phone" /> -
-				<input type="text" name = "cell-phone-3" class = "phone" /><br>
+
+				<input type="text" name = "cell-phone-1" class = "phone" />
+				<input type="text" name = "cell-phone-2" class = "phone" />
+				<input type="text" name = "cell-phone-3" class = "phone" />
 				<p>Cell</p>
 			</div>												
 		</div>
@@ -106,7 +105,7 @@
 		</div>
 		<div class="pure-g indent">
 			<div class="pure-u-1-2">
-				<input type="text" name = "email" /><br>
+				<input type="text" name = "email" />
 			</div>													
 		</div>
 		<div class="pure-g">
@@ -132,16 +131,16 @@
 			</div>
 		<div class="pure-g indent">
 			<div class="pure-u-1-4">
-				<input type="text" name = "age" /><br>
+				<input type="text" name = "age" />
 			</div>	
 			<div class="pure-u-1-4">
-				<input type="text" name = "birthdate" placeholder = "MM/DD/YYYY" /><br>
+				<input type="text" name = "birthdate" placeholder = "MM/DD/YYYY" />
 			</div>
 			<div class="pure-u-1-4">
-				<input type="text" name = "nationality" /><br>
+				<input type="text" name = "nationality" />
 			</div>
 			<div class="pure-u-1-4">
-				<input type="text" name = "birthplace" /><br>
+				<input type="text" name = "birthplace" />
 			</div>															
 		</div>											
 		<div class="pure-g">
@@ -153,15 +152,15 @@
 		</div>
 		<div class="pure-g indent">
 			<div class="pure-u-1-3">
-				<input type="text" name = "passport-number" /><br>
+				<input type="text" name = "passport-number" />
 				<p>Passport Number</p>
 			</div>	
 			<div class="pure-u-1-3">
-				<input type="text" name = "passport-issue-date" /><br>
+				<input type="text" name = "passport-issue-date" />
 				<p>Issue Date</p>
 			</div>
 			<div class="pure-u-1-3">
-				<input type="text" name = "passport-expiration-date" /><br>
+				<input type="text" name = "passport-expiration-date" />
 				<p>Expiration Date</p>
 			</div>															
 		</div>
@@ -245,7 +244,7 @@
 		</div>
 	</div>
 
-	</div> <!-- fuck this div -->
+<!-- 	</div> fuck this div -->
 
 	<!-- References -->
 	<div class = "section-block">
@@ -272,21 +271,21 @@
 		</div>		
 		<div class="pure-g indent">
 			<div class="pure-u-1-3">
-				<input type="text" name = "reference1-name" /><br>
+				<input type="text" name = "reference1-name" />
 				<p>Name</p>
 			</div>	
 			<div class="pure-u-1-3">
-				<input type="text" name = "reference1-relationship" /><br>
+				<input type="text" name = "reference1-relationship" />
 				<p>Relationship</p>
 			</div>
 			<div class="pure-u-1-3">
-				<input type="text" name = "reference1-phone" /><br>
+				<input type="text" name = "reference1-phone" />
 				<p>Phone</p>
 			</div>													
 		</div>
 		<div class="pure-g indent">
 			<div class="pure-u-1-2">
-				<input type="text" name = "reference1-email" /><br>
+				<input type="text" name = "reference1-email" />
 				<p>Email</p>
 			</div>													
 		</div>
@@ -299,21 +298,21 @@
 		</div>		
 		<div class="pure-g indent">
 			<div class="pure-u-1-3">
-				<input type="text" name = "reference1-name" /><br>
+				<input type="text" name = "reference1-name" />
 				<p>Name</p>
 			</div>	
 			<div class="pure-u-1-3">
-				<input type="text" name = "reference1-relationship" /><br>
+				<input type="text" name = "reference1-relationship" />
 				<p>Relationship</p>
 			</div>
 			<div class="pure-u-1-3">
-				<input type="text" name = "reference1-phone" /><br>
+				<input type="text" name = "reference1-phone" />
 				<p>Phone</p>
 			</div>													
 		</div>
 		<div class="pure-g indent">
 			<div class="pure-u-1-2">
-				<input type="text" name = "reference1-email" /><br>
+				<input type="text" name = "reference1-email" />
 				<p>Email</p>
 			</div>													
 		</div>
@@ -377,33 +376,33 @@
 						</li>
 					</ul>
 				<p>
-					<br>B.	The undersigned acknowledges that Reiser Relief has recommended that the undersigned purchase trip, health, accident and baggage insurance in connection with the missions trip, and that the undersigned obtain a physical examination and proper inoculations prior to going on the mission trip.
+					B.	The undersigned acknowledges that Reiser Relief has recommended that the undersigned purchase trip, health, accident and baggage insurance in connection with the missions trip, and that the undersigned obtain a physical examination and proper inoculations prior to going on the mission trip.
 				</p>
 				<p>
-					<br>C.	The undersigned acknowledges that he/she has been informed that United States citizens traveling outside of the United States are required to carry documentation of United States citizenship, which may include a valid passport or notarized copy of the citizen’s birth certificate with a raised seal, and a valid picture I.D. (such as a driver’s license).
+					C.	The undersigned acknowledges that he/she has been informed that United States citizens traveling outside of the United States are required to carry documentation of United States citizenship, which may include a valid passport or notarized copy of the citizen’s birth certificate with a raised seal, and a valid picture I.D. (such as a driver’s license).
 				</p>
 				<p>
-					<br>If you have any questions or cannot comply with any of the Expectations or Release, please explain or contact us.  We are excited at the possibility of having you with us!
+					If you have any questions or cannot comply with any of the Expectations or Release, please explain or contact us.  We are excited at the possibility of having you with us!
 				</p>
 				<p>
-					<br>I, <input type="text" name = "legal-signature-first" placeholder = "Full legal name" id = "first-legal" /> plan to participate in a short-term mission trip to Haiti and the planned activities and understand the actual itinerary and the actual activities that I participate in during the short-term mission trip may vary. I recognize the participation in the short-term mission trip and its activities may be hazardous and dangerous, and I willingly assume all risks associated with the short-term mission trip.<br><br>
+					I, <input type="text" name = "legal-signature-first" placeholder = "Full legal name" id = "first-legal" /> plan to participate in a short-term mission trip to Haiti and the planned activities and understand the actual itinerary and the actual activities that I participate in during the short-term mission trip may vary. I recognize the participation in the short-term mission trip and its activities may be hazardous and dangerous, and I willingly assume all risks associated with the short-term mission trip.
 
-					I acknowledge that I have been advised to seek my medical professional to understand the potential for contracting disease or parasites or suffering other adverse health consequences during my participation the short-term mission trip.  I understand that such diseases, parasites or health conditions may cause or result in serious health problems and may be fatal. I also realize that I will be serving in a country less developed than the United States, one that may report cases of diseases more frequently than in the United States such as malaria, yellow fever, typhoid, Hepatitis A, Hepatitis B and/or other diseases or illnesses.<br><br>
+					I acknowledge that I have been advised to seek my medical professional to understand the potential for contracting disease or parasites or suffering other adverse health consequences during my participation the short-term mission trip.  I understand that such diseases, parasites or health conditions may cause or result in serious health problems and may be fatal. I also realize that I will be serving in a country less developed than the United States, one that may report cases of diseases more frequently than in the United States such as malaria, yellow fever, typhoid, Hepatitis A, Hepatitis B and/or other diseases or illnesses.
 
-					I am aware that Reiser Relief, strongly advises me to obtain Tetanus Vaccinations and any other vaccinations, inoculations, or immunizations recommended by the Center for Disease Control or federal or Minnesota state health authorities. After careful consideration of these risks, I have either received all recommended vaccinations, inoculations, or immunizations from medical professionals or I have declined to receive them due to my religious beliefs, personal convictions, or medical contradictions. I agree that my decision to decline receipt of any or all of the recommended precautionary measures increases my risk of contracting disease.<br><br>
+					I am aware that Reiser Relief, strongly advises me to obtain Tetanus Vaccinations and any other vaccinations, inoculations, or immunizations recommended by the Center for Disease Control or federal or Minnesota state health authorities. After careful consideration of these risks, I have either received all recommended vaccinations, inoculations, or immunizations from medical professionals or I have declined to receive them due to my religious beliefs, personal convictions, or medical contradictions. I agree that my decision to decline receipt of any or all of the recommended precautionary measures increases my risk of contracting disease.
 
-					Therefore, in consideration of the privilege to participate extended to me by Reiser Relief, and on behalf of myself, executors, administrators, successors and assigns, I do hereby waive, release and forever discharge Reiser Relief,  employees, directors, officers, agents, representatives, and volunteers, from any and all actions, omissions, causes, claims and/or damages arising from , relating to, or resulting from my participation in the mission trip, including but not limited to, injury, expense, cost, damage, loss, illness, or death. I acknowledge that I have received good and valuable consideration for signing this waiver and release. I expressly agree that this release and waiver is intended to be as broad and inclusive as permitted by the laws of the state of Minnesota and that I intend this waiver to be binding on my family, estate, heirs, successors, assigns, insurers, medical providers and personal representatives. If any of this waiver and release is held invalid, it is agreed that the balance shall continue in legal force and effect.<br><br>
+					Therefore, in consideration of the privilege to participate extended to me by Reiser Relief, and on behalf of myself, executors, administrators, successors and assigns, I do hereby waive, release and forever discharge Reiser Relief,  employees, directors, officers, agents, representatives, and volunteers, from any and all actions, omissions, causes, claims and/or damages arising from , relating to, or resulting from my participation in the mission trip, including but not limited to, injury, expense, cost, damage, loss, illness, or death. I acknowledge that I have received good and valuable consideration for signing this waiver and release. I expressly agree that this release and waiver is intended to be as broad and inclusive as permitted by the laws of the state of Minnesota and that I intend this waiver to be binding on my family, estate, heirs, successors, assigns, insurers, medical providers and personal representatives. If any of this waiver and release is held invalid, it is agreed that the balance shall continue in legal force and effect.
 
-					I have read, understood, and executed this waiver and release on <?php echo(date("D M d, Y")); ?>.<br><br>
+					I have read, understood, and executed this waiver and release on <?php echo(date("D M d, Y")); ?>.
 
-					Please sign below using your mouse or finger:<br><br>
+					Please sign below using your mouse or finger:
 
 					<div id="sig"></div>
 					<p style="clear: both;">
 						<button id="clear">Clear</button> 
 					</p>
 				
-					<br>
+					
 				</p>
 			</div>													
 		</div>	

@@ -61,10 +61,6 @@ a {
 	max-width: 950px;
 }
 
-#app .pure-g{
-/*	padding-left: 10px;*/
-}
-
 #app p {
 	line-height: 34px;
 }
@@ -75,12 +71,32 @@ a {
     height: 40px;
     line-height: 40px;
     font-size: 30px;
+    padding-left: 10px;
+}
+
+#app .gray {
+	color: #808080;
 }
 
 #app input {
 	width: 100%;
+    height: 20px;
+    line-height: 20px;	
 }
 
 #app .indent {
 	margin-left: 45px;
+}
+
+#app .indent p {
+	margin-top: 0px;
+}
+
+#app .third-input {
+	width: 95%;
+}
+
+#app .phone {
+    width: 50px;
+    text-align: center;
 }
