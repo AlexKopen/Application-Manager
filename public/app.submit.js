@@ -1,6 +1,18 @@
 $(document).ready(function() {
-	//Serialize all form data and convert to JSON on submit
+	//Submit the application
 
+	// Check for legal acceptance
+    $('#waiver-checkbox-left input').change(function() {
+        if($(this).is(":checked")) {
+			$('#submit-container input').prop("disabled", false);
+			$('#submit-container').show();
+        } else {
+			$('#submit-container input').prop("disabled", true);
+			$('#submit-container').hide();
+        }
+    });	
+
+    // Submit with AJAX
 	$('#applicant-form').submit(function(event) {
 		var jsonData = JSON.stringify($(this).serializeArray());
 
