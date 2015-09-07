@@ -8,7 +8,10 @@
 	<div class="pure-g">
 		<div class="pure-u-1-1">
 			<p id = "payment">
+			<!-- create two columns -->
 				Thank you for your interest in missions with Reiser Relief, Inc.  Once your application is approved, a team leader will be contacting you requesting a non-refundable $125 deposit. A final payment of $725 is due 30 days prior to departure. The total for room and board is $850.
+				<?php echo date(); ?>
+
 			</p>
 		</div>
 	</div>
