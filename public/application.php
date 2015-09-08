@@ -36,6 +36,28 @@
 		</div>		
 	</div>
 
+	<form class="pure-form">
+		<legend>Personal Information</legend>
+		<div class="pure-g">
+			<div class="pure-u-1-2">
+				<fieldset class="pure-group">
+					<legend>Name <span class="gray">(as it appears on your passport.)</span></legend>
+					<input type="text" name="first-name" placeholder="First" />
+					<input type="text" name="middle-name" placeholder="Middle"/>
+					<input type="text" name="last-name" placeholder="Last" />
+				</fieldset>
+			</div>
+			<div class="pure-u-1-2">
+				<fieldset class="pure-group">
+					<legend>Name <span class="gray">(as it appears on your passport.)</span></legend>
+					<input type="text" name="first-name" placeholder="First" />
+					<input type="text" name="middle-name" placeholder="Middle"/>
+					<input type="text" name="last-name" placeholder="Last" />
+				</fieldset>
+			</div>
+		</div>
+	</form>
+
 	<form id ="applicant-form">
 
 		<!-- Personal Profile -->
