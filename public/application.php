@@ -60,13 +60,13 @@
 			<div class="pure-u-1-3">
 				<legend>Contact</legend>
 				<fieldset class="">
-					<label>Home Phone</label>
-					<input type="text" name = "home-phone-1" class = "pure-input-1-3" /> -
-					<input type="text" name = "home-phone-2" class = "pure-input-1-3" /> -
+					<label>Home Phone</label><br>
+					<input type="text" name = "home-phone-1" class = "pure-input-1-3" />
+					<input type="text" name = "home-phone-2" class = "pure-input-1-3" />
 					<input type="text" name = "home-phone-3" class = "pure-input-1-3" />
-					<label>Cell Phone</label>
-					<input type="text" name = "cell-phone-1" class = "pure-input-1-3" /> -
-					<input type="text" name = "cell-phone-2" class = "pure-input-1-3" /> -
+					<label>Cell Phone</label><br>
+					<input type="text" name = "cell-phone-1" class = "pure-input-1-3" />
+					<input type="text" name = "cell-phone-2" class = "pure-input-1-3" />
 					<input type="text" name = "cell-phone-3" class = "pure-input-1-3" />
 					<input type="text" name = "email" placeholder="Email" class="pure-input-1-1" />
 				</fieldset>
