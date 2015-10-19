@@ -211,7 +211,7 @@
 			</div>
 			<div class="pure-g indent">
 				<div class="pure-u-1-1">
-					<textarea disabled></textarea>
+					<textarea name = "gifts" disabled></textarea>
 				</div>													
 			</div>
 			<div class="pure-g">
@@ -223,7 +223,7 @@
 			</div>
 			<div class="pure-g indent">
 				<div class="pure-u-1-1">
-					<textarea disabled></textarea>
+					<textarea name = "expections" disabled></textarea>
 				</div>													
 			</div>
 			<div class="pure-g">
@@ -235,7 +235,7 @@
 			</div>
 			<div class="pure-g indent">
 				<div class="pure-u-1-1">
-					<textarea disabled></textarea>
+					<textarea name = "concerns" disabled></textarea>
 				</div>													
 			</div>	
 			<div class="pure-g">
@@ -247,7 +247,7 @@
 			</div>
 			<div class="pure-g indent">
 				<div class="pure-u-1-1">
-					<textarea disabled></textarea>
+					<textarea name = "health" disabled></textarea>
 				</div>													
 			</div>	
 			<div class="pure-g">
@@ -259,7 +259,7 @@
 			</div>
 			<div class="pure-g indent">
 				<div class="pure-u-1-1">
-					<textarea disabled></textarea>
+					<textarea name = "supportive" disabled></textarea>
 				</div>													
 			</div>
 		</div>
