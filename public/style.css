@@ -87,9 +87,10 @@ a {
 }
 
 #app input {
-    width: 100%;
-    height: 20px;
-    line-height: 20px;	
+    width: 90%;
+    height: 25px;
+    line-height: 25px;
+    margin-top: 10px;
 }
 
 

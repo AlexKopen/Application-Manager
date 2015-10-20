@@ -41,7 +41,7 @@
 		<div class="pure-g">
 			<div class="pure-u-1-3">
 				<fieldset class="pure-group">
-					<legend>Name <span class="gray">(as it appears on your passport.)</span></legend>
+					<legend>Name <span class="gray">(as it appears on your passport)</span></legend>
 					<input type="text" name="first-name" placeholder="First" />
 					<input type="text" name="middle-name" placeholder="Middle"/>
 					<input type="text" name="last-name" placeholder="Last" />
@@ -52,7 +52,7 @@
 				<fieldset class="pure-group">
 					<input type="text" name = "address" placeholder="Street Address"/>
 					<input type="text" name = "address-two" placeholder="Address Line 2"/>
-					<input type="text" name = "city" placeholder="City" class="pure-input-1-3" />
+					<input type="text" name = "city" placeholder="City" />
 					<input type="text" name = "state" class="pure-input-1-3" placeholder="State" />
 					<input type="text" name = "zip" class="pure-input-1-3" placeholder="ZIP" />
 				</fieldset>
