@@ -9,34 +9,37 @@
 	<div class="section-block">
 		<div class="pure-g">
 			<div class="pure-u-1-1">
-				<h3>
-					Trip Details
-				</h3>
+				<h1>
+					Haiti Mission Trip Application
+				</h1>
 			</div>
 		</div>
 		<div class="pure-g">
 			<div class="pure-u-1-1">
 				<p>
 					<span class = "bold">Trip Date:</span>
-					<?php 
-
+					<?php
 						$tripDate = new DateTime($_GET['trip']);
 						$tripDateFormatted = $tripDate->format('l\, F jS\, Y');
 						echo ($tripDateFormatted);
-
 					?>
 				</p>		
 				<p>
 					<span class = "bold">Additional Information:</span>
 					Thank you for your interest in missions with Reiser Relief, Inc.  Once your application is approved, a team leader will be contacting you requesting a non-refundable $125 deposit. A final payment of $725 is due 30 days prior to departure. The total for room and board is $850.
-
-
 				</p>
+
+				<p>
+					<span class = "bold">Expectations:</span>
+					You are willing to be uncomfortable.  You seek meaning and significance for your life.  You want to serve others and are open to God using this trip to shape you.  You agree that this trip is not about you or your purpose but God’s purpose for your life.  You are willing to hold babies, play with children, visit with elderly, go deep into the poorest reaches of Haiti and put others first.  You will be hot and dirty at the end of each day.  You understand that what you see and what you experience can change your life.  You agree to respect your team members and extend the Grace God has extended us when there are differences between us.
+				</p>				
 			</div>
 		</div>		
 	</div>
 
-	<form class="pure-form">
+	<!-- Personal Profile -->
+
+	<form class="pure-form" id ="applicant-form">
 		<legend>Personal Information</legend>
 		<div class="pure-g">
 			<div class="pure-u-1-3">
@@ -53,364 +56,166 @@
 					<input type="text" name = "address" placeholder="Street Address"/>
 					<input type="text" name = "address-two" placeholder="Address Line 2"/>
 					<input type="text" name = "city" placeholder="City" />
-					<input type="text" name = "state" class="pure-input-1-3" placeholder="State" />
-					<input type="text" name = "zip" class="pure-input-1-3" placeholder="ZIP" />
+					<div class="label-container">
+						<label class = "gray">State</label>
+					</div>
+					<select name = "state">
+						<option value="AL">Alabama</option>
+						<option value="AK">Alaska</option>
+						<option value="AZ">Arizona</option>
+						<option value="AR">Arkansas</option>
+						<option value="CA">California</option>
+						<option value="CO">Colorado</option>
+						<option value="CT">Connecticut</option>
+						<option value="DE">Delaware</option>
+						<option value="DC">District Of Columbia</option>
+						<option value="FL">Florida</option>
+						<option value="GA">Georgia</option>
+						<option value="HI">Hawaii</option>
+						<option value="ID">Idaho</option>
+						<option value="IL">Illinois</option>
+						<option value="IN">Indiana</option>
+						<option value="IA">Iowa</option>
+						<option value="KS">Kansas</option>
+						<option value="KY">Kentucky</option>
+						<option value="LA">Louisiana</option>
+						<option value="ME">Maine</option>
+						<option value="MD">Maryland</option>
+						<option value="MA">Massachusetts</option>
+						<option value="MI">Michigan</option>
+						<option value="MN">Minnesota</option>
+						<option value="MS">Mississippi</option>
+						<option value="MO">Missouri</option>
+						<option value="MT">Montana</option>
+						<option value="NE">Nebraska</option>
+						<option value="NV">Nevada</option>
+						<option value="NH">New Hampshire</option>
+						<option value="NJ">New Jersey</option>
+						<option value="NM">New Mexico</option>
+						<option value="NY">New York</option>
+						<option value="NC">North Carolina</option>
+						<option value="ND">North Dakota</option>
+						<option value="OH">Ohio</option>
+						<option value="OK">Oklahoma</option>
+						<option value="OR">Oregon</option>
+						<option value="PA">Pennsylvania</option>
+						<option value="RI">Rhode Island</option>
+						<option value="SC">South Carolina</option>
+						<option value="SD">South Dakota</option>
+						<option value="TN">Tennessee</option>
+						<option value="TX">Texas</option>
+						<option value="UT">Utah</option>
+						<option value="VT">Vermont</option>
+						<option value="VA">Virginia</option>
+						<option value="WA">Washington</option>
+						<option value="WV">West Virginia</option>
+						<option value="WI">Wisconsin</option>
+						<option value="WY">Wyoming</option>
+					</select>
+					<input type="text" name = "zip" placeholder="ZIP" />
 				</fieldset>
 			</div>
 			<div class="pure-u-1-3">
 				<legend>Contact</legend>
-				<fieldset class="">
-					<label>Home Phone</label><br>
-					<input type="text" name = "home-phone-1" class = "pure-input-1-3" />
-					<input type="text" name = "home-phone-2" class = "pure-input-1-3" />
-					<input type="text" name = "home-phone-3" class = "pure-input-1-3" />
-					<label>Cell Phone</label><br>
-					<input type="text" name = "cell-phone-1" class = "pure-input-1-3" />
-					<input type="text" name = "cell-phone-2" class = "pure-input-1-3" />
-					<input type="text" name = "cell-phone-3" class = "pure-input-1-3" />
-					<input type="text" name = "email" placeholder="Email" class="pure-input-1-1" />
+				<fieldset class="pure-group">
+					<input type="text" name = "home-phone" placeholder = "Home Phone"/>
+					<input type="text" name = "cell-phone" placeholder = "Cell Phone"/>
+					<input type="text" name = "email" placeholder="Email" />
 				</fieldset>
 			</div>
 		</div>
-	</form>
 
-	<form id ="applicant-form">
-
-		<!-- Personal Profile -->
-		<div class="section-block">
-			<div class="pure-g">
-				<div class="pure-u-1-1">
-					<h3>
-						Personal Profile
-					</h3>
-				</div>
+		<div class="pure-g">
+			<div class="pure-u-1-2">
+				<fieldset class="pure-group">
+					<legend>Citizenship</legend>
+					<input type="text" name = "age" placeholder = "Age" />	
+					<input type="text" name = "birthdate" placeholder = "Birthdate - MM/DD/YYYY" />
+					<input type="text" name = "nationality" placeholder = "Nationality" />
+					<input type="text" name = "birthplace" placeholder = "Birthplace" />
+				</fieldset>
 			</div>
-			<div class="pure-g">
-				<div class="pure-u-1-1">
-					<p>
-						Name <span class = "gray">(as it appears on your passport)</span>
-					</p>
-				</div>
-			</div>
-			<div class="pure-g indent">
-				<div class="pure-u-1-3">
-					<input type="text" name="first-name" class="third-input" />
-					<p>First</p>
-				</div>
-				<div class="pure-u-1-3">
-					<input type="text" name="middle-name" class="third-input" />
-					<p>Middle</p>
-				</div>
-				<div class="pure-u-1-3">
-					<input type="text" name="last-name" class="third-input" />
-					<p>Last</p>
-				</div>										
-			</div>
-			<div class="pure-g">
-				<div class="pure-u-1-1">
-					<p>
-						Address
-					</p>
-				</div>
-			</div>
-			<div class="pure-g indent">
-				<div class="pure-u-1-1">
-					<input type="text" name = "address" />
-					<p>Street Address</p>
-				</div>									
-			</div>
-			<div class="pure-g indent">
-				<div class="pure-u-1-1">
-					<input type="text" name = "address-two" />
-					<p>Address Line 2</p>
-				</div>									
-			</div>
-			<div class="pure-g indent">
-				<div class="pure-u-1-3">
-					<input type="text" name = "city" class="third-input" />
-					<p>City</p>
-				</div>
-				<div class="pure-u-1-3">
-					<input type="text" name = "state" class="third-input" />
-					<p>State / Province / Region</p>
-				</div>
-				<div class="pure-u-1-3">
-					<input type="text" name = "zip" class="third-input" />
-					<p>Zip / Postal Code</p>
-				</div>													
-			</div>
-			<div class="pure-g">
-				<div class="pure-u-1-1">
-					<p>
-						Phone
-					</p>
-				</div>
-			</div>
-			<div class="pure-g indent">
-				<div class="pure-u-1-1">
-					<input type="text" name = "home-phone-1" class = "phone" /> -
-					<input type="text" name = "city" name = "home-phone-2" class = "phone" /> -
-					<input type="text" name = "home-phone-3" class = "phone" />
-					<p>Home</p>
-				</div>												
-			</div>
-			<div class="pure-g indent">
-				<div class="pure-u-1-1">
-					<input type="text" name = "cell-phone-1" class = "phone" /> -
-					<input type="text" name = "cell-phone-2" class = "phone" /> -
-					<input type="text" name = "cell-phone-3" class = "phone" />
-					<p>Cell</p>			
-				</div>												
-			</div>	
-			<div class="pure-g">
-				<div class="pure-u-1-1">
-					<p>
-						Email
-					</p>
-				</div>
-			</div>
-			<div class="pure-g indent">
-				<div class="pure-u-1-2">
-					<input type="text" name = "email" />
-				</div>													
-			</div>
-			<div class="pure-g">
-				<div class="pure-u-1-4">
-					<p>
-						Age
-					</p>
-				</div>
-				<div class="pure-u-1-4">
-					<p>
-						Birthdate
-					</p>
-				</div>
-				<div class="pure-u-1-4">
-					<p>
-						Nationality
-					</p>
-				</div>
-				<div class="pure-u-1-4">
-					<p>
-						Birthplace
-					</p>
-				</div>
-			</div>
-			<div class="pure-g indent">
-				<div class="pure-u-1-4">
-					<input type="text" name = "age" class = "fourth-input" />
-				</div>	
-				<div class="pure-u-1-4">
-					<input type="text" name = "birthdate" placeholder = "MM/DD/YYYY" class = "fourth-input" />
-				</div>
-				<div class="pure-u-1-4">
-					<input type="text" name = "nationality" class = "fourth-input" />
-				</div>
-				<div class="pure-u-1-4">
-					<input type="text" name = "birthplace" class = "fourth-input" />
-				</div>															
-			</div>											
-			<div class="pure-g">
-				<div class="pure-u-1-1">
-					<p>
-						Passport
-					</p>
-				</div>
-			</div>
-			<div class="pure-g indent">
-				<div class="pure-u-1-3">
-					<input type="text" name = "passport-number" class = "third-input" />
-					<p>Passport Number</p>
-				</div>	
-				<div class="pure-u-1-3">
-					<input type="text" name = "passport-issue-date" class = "third-input" />
-					<p>Issue Date</p>
-				</div>
-				<div class="pure-u-1-3">
-					<input type="text" name = "passport-expiration-date" class = "third-input" />
-					<p>Expiration Date</p>
-				</div>															
-			</div>
-			<div class="pure-g">
-				<div class="pure-u-1-1">
-					<p>
-						Marital Status
-					</p>
-				</div>
-			</div>
-			<div class="pure-g indent">
-				<div class="pure-u-1-3">
+			<div class="pure-u-1-2">
+				<legend>Passport Info</legend>
+				<fieldset class="pure-group">					
+					<input type="text" name = "passport-number" placeholder = "Passport Number" />					
+					<input type="text" name = "passport-issue-date" placeholder = "Issue Date - MM/DD/YYYY" />					
+					<input type="text" name = "passport-expiration-date" placeholder = "Expiration Date - MM/DD/YYYY" />
+					<div class="label-container">
+						<label class = "gray">Marital Status</label>
+					</div>
 					<select name="marital">
-					  <option value="Single">Single</option>
-					  <option value="Engaged">Engaged</option>
-					  <option value="Married">Married</option>
-					  <option value="Separated">Separated</option>
-					  <option value="Divoriced">Divoriced</option>
+						<option value="Single">Single</option>
+						<option value="Engaged">Engaged</option>
+						<option value="Married">Married</option>
+						<option value="Separated">Separated</option>
+						<option value="Divoriced">Divoriced</option>
 					</select>
-				</div>													
+				</fieldset>
 			</div>
-			<div class="pure-g">
-				<div class="pure-u-1-1">
-					<p>
-						What gifts or strengths do you have that would add to the mission experience?
-					</p>
-				</div>
-			</div>
-			<div class="pure-g indent">
-				<div class="pure-u-1-1">
-					<textarea></textarea>
-				</div>													
-			</div>
-			<div class="pure-g">
-				<div class="pure-u-1-1">
-					<p>
-						Please list three expectations for your mission experience:
-					</p>
-				</div>
-			</div>
-			<div class="pure-g indent">
-				<div class="pure-u-1-1">
-					<textarea></textarea>
-				</div>													
-			</div>
-			<div class="pure-g">
-				<div class="pure-u-1-1">
-					<p>
-						Do you have any concerns or fears about this experience?  Please explain.
-					</p>
-				</div>
-			</div>
-			<div class="pure-g indent">
-				<div class="pure-u-1-1">
-					<textarea></textarea>
-				</div>													
-			</div>	
-			<div class="pure-g">
-				<div class="pure-u-1-1">
-					<p>
-						Do you have any health issues that the team should know?
-					</p>
-				</div>
-			</div>
-			<div class="pure-g indent">
-				<div class="pure-u-1-1">
-					<textarea></textarea>
-				</div>													
-			</div>	
-			<div class="pure-g">
-				<div class="pure-u-1-1">
-					<p>
-						Is your family supportive of you seeking a mission experience?  Explain:
-					</p>
-				</div>
-			</div>
-			<div class="pure-g indent">
-				<div class="pure-u-1-1">
-					<textarea></textarea>
-				</div>													
+		</div>
+
+		<div class="pure-g">
+			<div class="pure-u-1-1">
+				<fieldset class="pure-group">
+					<legend>Questions</legend>					
+					<label>What gifts or strengths do you have that would add to the mission experience?</label>
+					<div class = "textarea-container">
+						<textarea name = "gifts"></textarea>					
+					</div>
+					<label>Please list three expectations for your mission experience:</label>
+					<div class = "textarea-container">
+						<textarea name = "expections"></textarea>
+					</div>
+					<label>Do you have any concerns or fears about this experience?  Please explain.</label>
+					<div class = "textarea-container">
+						<textarea name = "concerns"></textarea>
+					</div>
+					<label>Do you have any health issues that the team should know?</label>
+					<div class = "textarea-container">
+						<textarea name = "health"></textarea>
+					</div>
+					<label>Is your family supportive of you seeking a mission experience?  Explain:</label>
+					<div class = "textarea-container">
+						<textarea name = "supportive"></textarea>
+					</div>
+				</fieldset>
 			</div>
 		</div>
 
 		<!-- References -->
-		<div class = "section-block">
-			<div class="pure-g">
-				<div class="pure-u-1-1">
-					<h3>
-						References
-					</h3>
-				</div>
+		<legend>References</legend>
+		<div class="pure-g">	
+			<div class="pure-u-1-2">
+				<fieldset class="pure-group">
+					<legend>Person 1</legend>
+					<input type="text" name = "reference1-name" placeholder = "Name"/>
+					<input type="text" name = "reference1-relationship" placeholder = "Relationship"/>
+					<input type="text" name = "reference1-phone" placeholder="Phone Number" />
+					<input type="text" name = "reference1-email" placeholder="Email Address" />					
+				</fieldset>
 			</div>
-			<div class="pure-g">
-				<div class="pure-u-1-1">
-					<p>
-						Please provide the contact information of two people who know about your values and character.
-					</p>
-				</div>
-			</div>
-			<div class="pure-g">
-				<div class="pure-u-1-1">
-					<p>
-						Person 1
-					</p>
-				</div>
-			</div>		
-			<div class="pure-g indent">
-				<div class="pure-u-1-3">
-					<input type="text" name = "reference1-name" class = "third-input" />
-					<p>Name</p>
-				</div>	
-				<div class="pure-u-1-3">
-					<input type="text" name = "reference1-relationship" class = "third-input" />
-					<p>Relationship</p>
-				</div>
-				<div class="pure-u-1-3">
-					<input type="text" name = "reference1-phone" class = "third-input" />
-					<p>Phone</p>
-				</div>													
-			</div>
-			<div class="pure-g indent">
-				<div class="pure-u-1-2">
-					<input type="text" name = "reference1-email" />
-					<p>Email</p>
-				</div>													
-			</div>
-			<div class="pure-g">
-				<div class="pure-u-1-1">
-					<p>
-						Person 2
-					</p>
-				</div>
-			</div>		
-			<div class="pure-g indent">
-				<div class="pure-u-1-3">
-					<input type="text" name = "reference1-name" class = "third-input" />
-					<p>Name</p>
-				</div>	
-				<div class="pure-u-1-3">
-					<input type="text" name = "reference1-relationship" class = "third-input" />
-					<p>Relationship</p>
-				</div>
-				<div class="pure-u-1-3">
-					<input type="text" name = "reference1-phone" class = "third-input" />
-					<p>Phone</p>
-				</div>													
-			</div>
-			<div class="pure-g indent">
-				<div class="pure-u-1-2">
-					<input type="text" name = "reference1-email" />
-					<p>Email</p>
-				</div>													
-			</div>
-		</div>
-
-		<!-- Expectations -->
-		<div class = "section-block">
-			<div class="pure-g">
-				<div class="pure-u-1-1">
-					<h3>
-						Expectations
-					</h3>
-				</div>
-			</div>
-			<div class="pure-g indent">
-				<div class="pure-u-1-1">
-					<p>
-						You are willing to be uncomfortable.  You seek meaning and significance for your life.  You want to serve others and are open to God using this trip to shape you.  You agree that this trip is not about you or your purpose but God’s purpose for your life.  You are willing to hold babies, play with children, visit with elderly, go deep into the poorest reaches of Haiti and put others first.  You will be hot and dirty at the end of each day.  You understand that what you see and what you experience can change your life.  You agree to respect your team members and extend the Grace God has extended us when there are differences between us.
-					</p>
-				</div>													
-			</div>
+			<div class="pure-u-1-2">
+				<fieldset class="pure-group">
+					<legend>Person 2</legend>
+					<input type="text" name = "reference2-name" placeholder = "Name"/>
+					<input type="text" name = "reference2-relationship" placeholder = "Relationship"/>
+					<input type="text" name = "reference2-phone" placeholder="Phone Number" />
+					<input type="text" name = "reference2-email" placeholder="Email Address" />					
+				</fieldset>
+			</div>			
 		</div>
 
 		<!-- Legal -->
 		<div class = "section-block">
 			<div class="pure-g">
 				<div class="pure-u-1-1">
-					<h3>
+					<legend>
 						Agreement / Waiver and Release of Liability
-					</h3>
+					</legend>
 				</div>
 			</div>
-			<div class="pure-g indent">
+			<div class="pure-g">
 				<div class="pure-u-1-1">
 					<p>
 						A. As a condition of being permitted to travel with Reiser Relief on, and participate in, a mission trip to Haiti, the undersigned hereby:
@@ -451,7 +256,7 @@
 						If you have any questions or cannot comply with any of the Expectations or Release, please explain or contact us.  We are excited at the possibility of having you with us!
 					</p>
 					<p>
-						I, <input type="text" name = "legal-signature-first" placeholder = "Full legal name" id = "legal-name" /> plan to participate in a short-term mission trip to Haiti and the planned activities and understand the actual itinerary and the actual activities that I participate in during the short-term mission trip may vary. I recognize the participation in the short-term mission trip and its activities may be hazardous and dangerous, and I willingly assume all risks associated with the short-term mission trip.
+						I, <input type="text" name = "legal-signature-first" placeholder = "Full legal name" id = "legal-name" />, plan to participate in a short-term mission trip to Haiti and the planned activities and understand the actual itinerary and the actual activities that I participate in during the short-term mission trip may vary. I recognize the participation in the short-term mission trip and its activities may be hazardous and dangerous, and I willingly assume all risks associated with the short-term mission trip.
 
 						I acknowledge that I have been advised to seek my medical professional to understand the potential for contracting disease or parasites or suffering other adverse health consequences during my participation the short-term mission trip.  I understand that such diseases, parasites or health conditions may cause or result in serious health problems and may be fatal. I also realize that I will be serving in a country less developed than the United States, one that may report cases of diseases more frequently than in the United States such as malaria, yellow fever, typhoid, Hepatitis A, Hepatitis B and/or other diseases or illnesses.
 
@@ -462,26 +267,29 @@
 				</div>													
 			</div>
 
-			<div class="pure-g indent">
+			<div class="pure-g">
 				<div class="pure-u-1-2" id = "waiver-checkbox-left">
 					<input type = "checkbox" name = "waiver-acceptance" />
 				</div>
 				<div class="pure-u-1-2" id = "waiver-checkbox-right">
-					I have read, understood, and executed this waiver and release on 
-					<?php 
-						echo(date("D M d, Y")); 
-					?>.	
+					<p>
+						I have read, understood, and executed this waiver and release on 
+						<?php 
+							echo(date("D M d, Y")); 
+						?>.
+					</p>
 				</div>			
 			</div>		
 
-			<div class = "pure-g" id = "submit-g-container">
+			<div class = "pure-g">
 				<div class="pure-u-1-1" id = "submit-container">
 					<input type = "submit" value = "Submit Application" disabled="true" />
 				</div>
 			</div>	
-		</div>
+		</div>			
 
 	</form>
+
 	
 </div>
 
