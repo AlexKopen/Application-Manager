@@ -12,7 +12,6 @@ if ($result->num_rows > 0) {
     echo '<table class = "dates pure-table pure-table-bordered"><thead><tr><th>Trip Date</th><th></th></tr></thead><tbody>';
     $oddRow = true;
 
-    // output data of each row
     while($row = $result->fetch_assoc()) {   
 
         $tripDate = new DateTime($row['date']);
@@ -41,9 +40,7 @@ if ($result->num_rows > 0) {
     echo '</tbody></table>';
 
 } else {
-    echo '<p>No Dates Found</p>';
+    echo '<p>There are currently no open mission trips.</p>';
 }
 
  ?>
-
-

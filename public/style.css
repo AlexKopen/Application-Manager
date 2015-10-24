@@ -65,7 +65,7 @@ a {
 	max-width: 950px;
 }
 
-#app p {
+#app p, #app li {
 	line-height: 34px;
 }
 
@@ -113,7 +113,7 @@ a {
 }
 
 #app #waiver-checkbox-left input {
-	margin-top: 21px;
+	margin-top: 18px;
 }
 
 #app #waiver-checkbox-right {

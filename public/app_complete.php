@@ -1,20 +1,23 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Reiser Relief Application</title>
-</head>
+<?php 
+	require ('header.php');
+ ?>
 <body>
 
-<?php 
+<div class="container">
+	<?php
+		if ($_GET['success'] == 'true'){
 
-	if ($_GET['success'] == 'true'){
-		echo ('<h1>Application submitted successfully</h1>');
-		echo ($_GET['trip']);
-	} else{
-		echo ('<h1>Application submitted UNsuccessfully</h1>');
-	}
-	
- ?>
+			$tripDate = new DateTime($_GET['trip']);
+			$tripDateFormatted = $tripDate->format('l\, F jS\, Y');
+
+			echo ('<h1>Application submitted successfully</h1>');
+			echo ('<p>Your application for the trip of ') . $tripDateFormatted . ' has been received.  A team member will be in contact with you soon.</p>';
+		} else{
+			echo ('<h1>Application submitted UNsuccessfully</h1>');
+		}		
+	 ?>
+
+ </div>
 
 </body>
 </html>

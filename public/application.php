@@ -83,7 +83,7 @@
 						<option value="MD">Maryland</option>
 						<option value="MA">Massachusetts</option>
 						<option value="MI">Michigan</option>
-						<option value="MN">Minnesota</option>
+						<option value="MN" selected>Minnesota</option>
 						<option value="MS">Mississippi</option>
 						<option value="MO">Missouri</option>
 						<option value="MT">Montana</option>
@@ -207,7 +207,7 @@
 		</div>
 
 		<!-- Legal -->
-		<div class = "section-block">
+		<div>
 			<div class="pure-g">
 				<div class="pure-u-1-1">
 					<legend>

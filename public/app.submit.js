@@ -6,7 +6,7 @@ $(document).ready(function() {
         if($(this).is(":checked")) {
 			$('#submit-container input').prop("disabled", false);
 			$('#submit-container').show();
-			$("html, body").animate({ scrollTop: $(document).height() }, "slow");
+			$("html, body").animate({ scrollTop: $(document).height() }, "fast");
         } else {
 			$('#submit-container input').prop("disabled", true);
 			$('#submit-container').hide();
