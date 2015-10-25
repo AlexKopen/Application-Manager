@@ -17,20 +17,27 @@
 		<div class="pure-g">
 			<div class="pure-u-1-1">
 				<p>
-					<span class = "bold">Trip Date:</span>
+					<strong>Trip Date:</strong>
 					<?php
+						
+						// Check for an invalid date being entered in the URL
+						if (!preg_match('/^\d{4}-\d{2}-\d{2}$/', $_GET['trip'])) {
+							header("Location: index.php"); 
+							die("Redirecting to: index.php"); 	
+						}
+
 						$tripDate = new DateTime($_GET['trip']);
 						$tripDateFormatted = $tripDate->format('l\, F jS\, Y');
 						echo ($tripDateFormatted);
 					?>
-				</p>		
+				</p>
 				<p>
-					<span class = "bold">Additional Information:</span>
+					<strong>Additional Information:</strong>
 					Thank you for your interest in missions with Reiser Relief, Inc.  Once your application is approved, a team leader will be contacting you requesting a non-refundable $125 deposit. A final payment of $725 is due 30 days prior to departure. The total for room and board is $850.
 				</p>
 
 				<p>
-					<span class = "bold">Expectations:</span>
+					<strong>Expectations:</strong>
 					You are willing to be uncomfortable.  You seek meaning and significance for your life.  You want to serve others and are open to God using this trip to shape you.  You agree that this trip is not about you or your purpose but God’s purpose for your life.  You are willing to hold babies, play with children, visit with elderly, go deep into the poorest reaches of Haiti and put others first.  You will be hot and dirty at the end of each day.  You understand that what you see and what you experience can change your life.  You agree to respect your team members and extend the Grace God has extended us when there are differences between us.
 				</p>				
 			</div>
@@ -275,7 +282,7 @@
 					<p>
 						I have read, understood, and executed this waiver and release on 
 						<?php 
-							echo(date("D M d, Y")); 
+							echo(date('l\, F jS\, Y'));
 						?>.
 					</p>
 				</div>			

@@ -69,10 +69,6 @@ a {
 	line-height: 34px;
 }
 
-#app .bold {
-	font-weight: bold;
-}
-
 #app .gray {
 	color: #808080;
 }
@@ -128,4 +124,12 @@ a {
 	width: 30%;
 	margin-left: 35%;
 	height: 35px;
+}
+
+#submit.container {
+	max-width: 1000px;
+}
+
+#submit #links p{
+	text-align: center;
 }

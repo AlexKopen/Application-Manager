@@ -17,6 +17,11 @@ $date = date('Y-m-d');
 $trip = $_GET['trip'];
 $json = $_GET['json'];
 
+// Check for a trip date being manipulated in the DOM
+if (!preg_match('/^\d{4}-\d{2}-\d{2}$/', $_GET['trip'])) {
+	header("Location: index.php"); 
+	die("Redirecting to: index.php"); 	
+}
 
 $sql = "INSERT INTO applications (name, date, trip, json) VALUES ('$name', '$date', '$trip', '$json')";
 
