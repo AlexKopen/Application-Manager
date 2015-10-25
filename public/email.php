@@ -1,6 +1,5 @@
 <?php
 
-
 function sendMail($tripDate){
 
 	$recipients = array('alexkopen@gmail.com');
