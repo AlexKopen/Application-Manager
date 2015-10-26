@@ -36,6 +36,18 @@
 	require ('fetch_application.php'); 
  ?>
 
+<div class="container" id = "app">
+	<div class="pure-g">
+		<div class="pure-u-1-1">
+			<h1>Application details</h1>
+			<p>Applicant name: <?php echo ($name); ?></p>		
+			<p>Trip date applied for: <?php echo ($tripDateFormatted); ?></p>
+			<p>Application submitted on: <?php echo ($applyDateFormatted); ?></p>
+			<p><a href="home.php">Click here to return to the administrator home page</a></p>
+		</div>
+	</div>
+</div>
+
 <?php 
 	require ('form_template.php');
  ?>
