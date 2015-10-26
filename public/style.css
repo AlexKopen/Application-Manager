@@ -99,6 +99,7 @@ a {
 
 #app select {
 	width: 90%;
+	height: 40px;
 }
 
 
@@ -120,4 +121,8 @@ a {
     width: initial;
     display: inline-block;
     vertical-align: middle;
+}
+
+#app-complete.container{
+	max-width: 1000px;
 }

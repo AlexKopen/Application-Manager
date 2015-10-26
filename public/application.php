@@ -60,6 +60,7 @@
 					<input type="text" name = "birthdate" placeholder = "Birthdate - MM/DD/YYYY" />
 					<input type="text" name = "nationality" placeholder = "Nationality" />
 					<input type="text" name = "birthplace" placeholder = "Birthplace" />
+					<input type="text" name = "alternate-name" placeholder = "Maiden, Alias or Former Name" />
 					<select name="marital">
 						<option value="Single">Single</option>
 						<option value="Engaged">Engaged</option>
@@ -67,6 +68,10 @@
 						<option value="Separated">Separated</option>
 						<option value="Divoriced">Divoriced</option>
 					</select>
+					<select name="gender">
+						<option value="Male">Male</option>
+						<option value="Female">Female</option>
+					</select>					
 				</fieldset>
 			</div>
 			<div class="pure-u-1-2">
@@ -246,7 +251,7 @@
 				<fieldset>
 					<label for="waiver-acceptance">
 			            <input id="waiver-acceptance" name = "waiver-acceptance" type="checkbox" class="pure-checkbox"> I have read, understood, and executed this waiver and release on <?php echo(date('l\, F jS\, Y')); ?>.</label>
-			        <button type="submit" class="pure-button">Submit Application</button>
+			        <button type="submit" class="pure-button" id = "submit-button" disabled>Submit Application</button>
 				</fieldset>
 			</div>	
 		</div>

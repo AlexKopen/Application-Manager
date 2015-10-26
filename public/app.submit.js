@@ -1,19 +1,24 @@
 $(document).ready(function() {
-	//Submit the application
 
 	// Check for legal acceptance
-    $('#waiver-checkbox-left input').change(function() {
-        if($(this).is(":checked")) {
-			$('#submit-container input').prop("disabled", false);
-			$('#submit-container').show();
-			$("html, body").animate({ scrollTop: $(document).height() }, "fast");
-        } else {
-			$('#submit-container input').prop("disabled", true);
-			$('#submit-container').hide();
-        }
-    });	
+	$('#waiver-acceptance').change(function() {
+		if($(this).is(":checked")) {
+			$('#submit-button').prop("disabled", false);
+			$('#submit-button').css({
+				'filter': 'progid:DXImageTransform.Microsoft.gradient(startColorstr="#00000000", endColorstr="#1a000000", GradientType=0)',
+				'background-image': '-webkit-gradient(linear,0 0,0 100%,from(transparent),color-stop(40%,rgba(0,0,0,.05)),to(rgba(0,0,0,.1)))',
+				'background-image': '-webkit-linear-gradient(transparent,rgba(0,0,0,.05) 40%,rgba(0,0,0,.1))',
+				'background-image': '-moz-linear-gradient(top,rgba(0,0,0,.05) 0,rgba(0,0,0,.1))',
+				'background-image': '-o-linear-gradient(transparent,rgba(0,0,0,.05) 40%,rgba(0,0,0,.1))',
+				'background-image': 'linear-gradient(transparent,rgba(0,0,0,.05) 40%,rgba(0,0,0,.1))'
+			});
+		} else {
+			$('#submit-button').prop("disabled", true);
+			$('#submit-button').css('background-image', 'none');
+		}
+	});
 
-    // Submit with AJAX
+	// Submit with AJAX
 	$('#applicant-form').submit(function(event) {
 		var jsonData = JSON.stringify($(this).serializeArray());
 

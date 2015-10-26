@@ -3,7 +3,7 @@
  ?>
 <body>
 
-<div class="container" id = "submit">
+<div class="container" id = "app-complete">
 	<?php
 		if ($_GET['success'] == 'true'){
 
