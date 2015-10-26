@@ -4,7 +4,7 @@
 
  <?php 
 
-$sql = "SELECT * FROM trip_dates ORDER BY date DESC";
+$sql = "SELECT * FROM trip_dates ORDER BY date ASC";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
