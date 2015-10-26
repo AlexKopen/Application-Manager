@@ -12,7 +12,7 @@ $(document).ready(function() {
 
 		formInputs.each(function() {
 
-			// $(this).attr('disabled', true); 
+			$(this).attr('disabled', true); 
 
 			if ($(this).attr('name') == jsonAsArray[i].name) {
 				$(this).val(jsonAsArray[i].value);

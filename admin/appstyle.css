@@ -1,0 +1,110 @@
+body {
+	background: #f8f8f8;
+	font-family: 'Lato', sans-serif;
+}
+
+img {
+    display: block;
+    max-width: 200px;
+}
+
+a {
+	color: #000000;
+}
+
+.container{
+	max-width: 1920px;
+	margin: 0 auto;
+	padding: 10px;
+}
+
+#header {
+	background: #272424;
+}
+
+#header a {
+	color: #ffffff;
+}
+
+#header #logo-container{
+	width: 300px;
+}
+
+#right-header p {
+	text-align: right;
+}
+
+#right-header a {
+	text-decoration: none;
+}
+
+#app.container{
+	max-width: 950px;
+}
+
+#app p, #app li {
+	line-height: 34px;
+}
+
+#app .gray {
+	color: #808080;
+}
+
+#app input {
+    width: 90%;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 10px;
+}
+
+#app .label-container {
+	margin-top: 10px;
+}
+
+#app select {
+	width: 90%;
+}
+
+#app .textarea-container {
+	padding: 15px 0 30px 0;
+}
+
+
+#app textarea {
+	width: 100%;
+	height: 200px;
+	resize: vertical;
+}
+
+#app #legal-name {
+	width: 300px;
+	margin-top: 0;
+}
+
+#app #waiver-checkbox-left {
+	width: 5%;
+}
+
+#app #waiver-checkbox-left input {
+	margin-top: 18px;
+}
+
+#app #waiver-checkbox-right {
+	width: 95%;
+}
+
+#app #submit-container {
+	display: none;
+}
+
+#app #submit-container input {
+	width: 30%;
+	margin-left: 35%;
+	height: 35px;
+}
+
+.pure-form input[type=text][disabled], .pure-form input[type=password][disabled], .pure-form input[type=email][disabled], .pure-form input[type=url][disabled], .pure-form input[type=date][disabled], .pure-form input[type=month][disabled], .pure-form input[type=time][disabled], .pure-form input[type=datetime][disabled], .pure-form input[type=datetime-local][disabled], .pure-form input[type=week][disabled], .pure-form input[type=number][disabled], .pure-form input[type=search][disabled], .pure-form input[type=tel][disabled], .pure-form input[type=color][disabled], .pure-form select[disabled], .pure-form textarea[disabled] {
+	cursor: auto; 
+	background-color: transparent; 
+	color: #000000; 
+}

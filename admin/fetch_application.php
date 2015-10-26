@@ -28,12 +28,6 @@ if ($result->num_rows > 0) {
     	$applyDateFormatted = $applyDate->format('l\, F jS\, Y');
 
         $name = $row['name'];
-
-        echo '<div id = "trip-info">';
-        echo '<p>Name: ' . $name . '</p>';
-        echo '<p>Trip Date: ' . $tripDateFormatted . '</p>';
-        echo '<p>Submitted On: ' . $applyDateFormatted . '</p>';
-        echo '</div>';
     }
 } else {
     echo '0 results';
