@@ -11,6 +11,9 @@ $(document).ready(function() {
 		currentValue = jsonAsArray[i].value;
 
 		formInputs.each(function() {
+
+			// $(this).attr('disabled', true); 
+
 			if ($(this).attr('name') == jsonAsArray[i].name) {
 				$(this).val(jsonAsArray[i].value);
 				return;

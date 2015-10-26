@@ -21,8 +21,8 @@
 	<h1>Application Manager</h1>
 
 	<form action="login.php" method="post">
-		<input name="username" placeholder="username"> <br>
-		<input name="password" type = "password" placeholder = "password"> <br>
+		<input name="username" placeholder="username" value="reiserapp"> <br>
+		<input name="password" type = "password" placeholder = "password" value = "crapidsangel9"> <br>
 		<input type="submit" value="Login">
 	</form>
 </div>
