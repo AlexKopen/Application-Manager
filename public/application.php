@@ -19,8 +19,15 @@
 				</thead>
 				<tbody>
 					<tr>
-						<td> <!--Fetch the trip date-->
+						<td> 
+						<!--Fetch the trip date-->
 							<?php
+								// Check for a trip date being manipulated in the DOM or URL
+								if (!preg_match('/^\d{4}-\d{2}-\d{2}$/', $_GET['trip'])) {
+									header("Location: index.php"); 
+									die("Redirecting to: index.php"); 	
+								}
+
 								$tripDate = new DateTime($_GET['trip']);
 								$tripDateFormatted = $tripDate->format('l\, F jS\, Y');
 								echo ($tripDateFormatted);

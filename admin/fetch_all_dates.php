@@ -4,7 +4,7 @@
 
 <?php 
 
-$sql = "SELECT * FROM trip_dates ORDER BY date DESC";
+$sql = "SELECT * FROM trip_dates ORDER BY date ASC";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
@@ -33,7 +33,14 @@ if ($result->num_rows > 0) {
         echo $tripDateFormatted;
         echo '</td>';
         echo '<td>';
-        echo '<div class = "delete" id = "' . $row['date'] . '">Delete</div>';
+        echo '<div class = "admin-button delete-button" id = "' . $row['date'] . '">Delete</div>';
+
+        if ($row['is_full']){
+            echo '<div class = "admin-button open-button" id = "' . $row['date'] . '">Mark as Open</div>';
+        } else {
+            echo '<div class = "admin-button full-button" id = "' . $row['date'] . '">Mark as Full</div>';
+        }        
+        
         echo '</td>';              
         echo '</tr>';
 

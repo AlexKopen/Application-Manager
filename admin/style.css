@@ -81,15 +81,31 @@ table.applications td{
 	width: 25%;
 }
 
-.delete {
+.admin-button {
     background-color: #d9534f;
-    width: 80px;
+    width: 120px;
     text-align: center;
     height: 30px;
     line-height: 30px;
     border-radius: 10px;
     color: #ffffff;
     cursor: pointer;
+    float: left;
+	margin-left: 10px;    
+}
+
+.delete-button {
+    background-color: #d9534f;
+    margin-left: 0px;
+}
+
+.full-button {
+    background-color: #f0ad4e;
+}
+
+.open-button {
+    background-color: #ffffff;
+    color: #000000;
 }
 
 .mini-container {
