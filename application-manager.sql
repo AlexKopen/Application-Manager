@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 31, 2015 at 07:49 AM
+-- Generation Time: Oct 28, 2015 at 06:59 AM
 -- Server version: 5.6.25
 -- PHP Version: 5.6.11
 
@@ -32,7 +32,7 @@ CREATE TABLE IF NOT EXISTS `applications` (
   `date` date NOT NULL,
   `trip` date NOT NULL,
   `json` text NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `applications`
@@ -40,9 +40,6 @@ CREATE TABLE IF NOT EXISTS `applications` (
 
 INSERT INTO `applications` (`id`, `name`, `date`, `trip`, `json`) VALUES
 (1, 'Alex Kopen', '2015-08-18', '2015-09-01', '[{"name":"first-name","value":"Alex"},{"name":"middle-name","value":"Daniel"},{"name":"last-name","value":"Kopen"},{"name":"address","value":"8581 shadow creek dr"},{"name":"address-two","value":""},{"name":"city","value":"Maple Grove"},{"name":"state","value":"MN"},{"name":"zip","value":"55311"},{"name":"home-phone-1","value":"763"},{"name":"home-phone-2","value":"494"},{"name":"home-phone-3","value":"4471"},{"name":"cell-phone-1","value":"763"},{"name":"cell-phone-2","value":"286"},{"name":"cell-phone-3","value":"7557"},{"name":"email","value":"alexkopen@gmail.com"},{"name":"age","value":"21"},{"name":"birthdate","value":"02/08/1994"},{"name":"nationality","value":"U.S."},{"name":"birthplace","value":"Robbinsdale"},{"name":"passport-number","value":"123456"},{"name":"passport-issue-date","value":"01/03/2012"},{"name":"passport-expiration-date","value":"01/03/2018"},{"name":"marital","value":"Single"},{"name":"reference1-name","value":"bobby johnson"},{"name":"reference1-relationship","value":"madeup"},{"name":"reference1-phone","value":"7632869887"},{"name":"reference1-email","value":"bjohnson@lol.com"},{"name":"reference1-name","value":"tim yoki"},{"name":"reference1-relationship","value":"daddy"},{"name":"reference1-phone","value":"7634948875"},{"name":"reference1-email","value":"hisemail@hehe.com"},{"name":"legal-signature-first","value":"Alex Daniel Kopen"}]'),
-(3, 'bobby shmurda', '2015-08-17', '2015-09-01', '[{"name":"first-name","value":"Alex"},{"name":"middle-name","value":"Daniel"},{"name":"last-name","value":"Kopen"},{"name":"address","value":"8581 shadow creek dr"},{"name":"address-two","value":""},{"name":"city","value":"Maple Grove"},{"name":"state","value":"MN"},{"name":"zip","value":"55311"},{"name":"home-phone-1","value":"763"},{"name":"home-phone-2","value":"494"},{"name":"home-phone-3","value":"4471"},{"name":"cell-phone-1","value":"763"},{"name":"cell-phone-2","value":"286"},{"name":"cell-phone-3","value":"7557"},{"name":"email","value":"alexkopen@gmail.com"},{"name":"age","value":"21"},{"name":"birthdate","value":"02/08/1994"},{"name":"nationality","value":"U.S."},{"name":"birthplace","value":"Robbinsdale"},{"name":"passport-number","value":"123456"},{"name":"passport-issue-date","value":"01/03/2012"},{"name":"passport-expiration-date","value":"01/03/2018"},{"name":"marital","value":"Single"},{"name":"reference1-name","value":"bobby johnson"},{"name":"reference1-relationship","value":"madeup"},{"name":"reference1-phone","value":"7632869887"},{"name":"reference1-email","value":"bjohnson@lol.com"},{"name":"reference1-name","value":"tim yoki"},{"name":"reference1-relationship","value":"daddy"},{"name":"reference1-phone","value":"7634948875"},{"name":"reference1-email","value":"hisemail@hehe.com"},{"name":"legal-signature-first","value":"Alex Daniel Kopen"}]'),
-(4, 'ya boi', '2015-08-16', '2015-09-01', '[{"name":"first-name","value":"Alex"},{"name":"middle-name","value":"Daniel"},{"name":"last-name","value":"Kopen"},{"name":"address","value":"8581 shadow creek dr"},{"name":"address-two","value":""},{"name":"city","value":"Maple Grove"},{"name":"state","value":"MN"},{"name":"zip","value":"55311"},{"name":"home-phone-1","value":"763"},{"name":"home-phone-2","value":"494"},{"name":"home-phone-3","value":"4471"},{"name":"cell-phone-1","value":"763"},{"name":"cell-phone-2","value":"286"},{"name":"cell-phone-3","value":"7557"},{"name":"email","value":"alexkopen@gmail.com"},{"name":"age","value":"21"},{"name":"birthdate","value":"02/08/1994"},{"name":"nationality","value":"U.S."},{"name":"birthplace","value":"Robbinsdale"},{"name":"passport-number","value":"123456"},{"name":"passport-issue-date","value":"01/03/2012"},{"name":"passport-expiration-date","value":"01/03/2018"},{"name":"marital","value":"Single"},{"name":"reference1-name","value":"bobby johnson"},{"name":"reference1-relationship","value":"madeup"},{"name":"reference1-phone","value":"7632869887"},{"name":"reference1-email","value":"bjohnson@lol.com"},{"name":"reference1-name","value":"tim yoki"},{"name":"reference1-relationship","value":"daddy"},{"name":"reference1-phone","value":"7634948875"},{"name":"reference1-email","value":"hisemail@hehe.com"},{"name":"legal-signature-first","value":"Alex Daniel Kopen"}]'),
-(5, 'chel', '2015-08-15', '2015-09-01', '[{"name":"first-name","value":"Alex"},{"name":"middle-name","value":"Daniel"},{"name":"last-name","value":"Kopen"},{"name":"address","value":"8581 shadow creek dr"},{"name":"address-two","value":""},{"name":"city","value":"Maple Grove"},{"name":"state","value":"MN"},{"name":"zip","value":"55311"},{"name":"home-phone-1","value":"763"},{"name":"home-phone-2","value":"494"},{"name":"home-phone-3","value":"4471"},{"name":"cell-phone-1","value":"763"},{"name":"cell-phone-2","value":"286"},{"name":"cell-phone-3","value":"7557"},{"name":"email","value":"alexkopen@gmail.com"},{"name":"age","value":"21"},{"name":"birthdate","value":"02/08/1994"},{"name":"nationality","value":"U.S."},{"name":"birthplace","value":"Robbinsdale"},{"name":"passport-number","value":"123456"},{"name":"passport-issue-date","value":"01/03/2012"},{"name":"passport-expiration-date","value":"01/03/2018"},{"name":"marital","value":"Single"},{"name":"reference1-name","value":"bobby johnson"},{"name":"reference1-relationship","value":"madeup"},{"name":"reference1-phone","value":"7632869887"},{"name":"reference1-email","value":"bjohnson@lol.com"},{"name":"reference1-name","value":"tim yoki"},{"name":"reference1-relationship","value":"daddy"},{"name":"reference1-phone","value":"7634948875"},{"name":"reference1-email","value":"hisemail@hehe.com"},{"name":"legal-signature-first","value":"Alex Daniel Kopen"}]'),
 (6, 'new guy', '2015-08-15', '2015-11-06', '[{"name":"first-name","value":"Alex"},{"name":"middle-name","value":"Daniel"},{"name":"last-name","value":"Kopen"},{"name":"address","value":"8581 shadow creek dr"},{"name":"address-two","value":""},{"name":"city","value":"Maple Grove"},{"name":"state","value":"MN"},{"name":"zip","value":"55311"},{"name":"home-phone-1","value":"763"},{"name":"home-phone-2","value":"494"},{"name":"home-phone-3","value":"4471"},{"name":"cell-phone-1","value":"763"},{"name":"cell-phone-2","value":"286"},{"name":"cell-phone-3","value":"7557"},{"name":"email","value":"alexkopen@gmail.com"},{"name":"age","value":"21"},{"name":"birthdate","value":"02/08/1994"},{"name":"nationality","value":"U.S."},{"name":"birthplace","value":"Robbinsdale"},{"name":"passport-number","value":"123456"},{"name":"passport-issue-date","value":"01/03/2012"},{"name":"passport-expiration-date","value":"01/03/2018"},{"name":"marital","value":"Single"},{"name":"reference1-name","value":"bobby johnson"},{"name":"reference1-relationship","value":"madeup"},{"name":"reference1-phone","value":"7632869887"},{"name":"reference1-email","value":"bjohnson@lol.com"},{"name":"reference1-name","value":"tim yoki"},{"name":"reference1-relationship","value":"daddy"},{"name":"reference1-phone","value":"7634948875"},{"name":"reference1-email","value":"hisemail@hehe.com"},{"name":"legal-signature-first","value":"Alex Daniel Kopen"}]');
 
 -- --------------------------------------------------------
@@ -53,21 +50,22 @@ INSERT INTO `applications` (`id`, `name`, `date`, `trip`, `json`) VALUES
 
 CREATE TABLE IF NOT EXISTS `trip_dates` (
   `id` int(11) NOT NULL,
-  `date` date NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
+  `date` date NOT NULL,
+  `leader` varchar(64) NOT NULL,
+  `is_full` tinyint(1) NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `trip_dates`
 --
 
-INSERT INTO `trip_dates` (`id`, `date`) VALUES
-(1, '2015-09-14'),
-(3, '2015-10-12'),
-(4, '2016-01-18'),
-(5, '2016-03-07'),
-(6, '2016-06-20'),
-(7, '2016-07-11'),
-(8, '2016-10-10');
+INSERT INTO `trip_dates` (`id`, `date`, `leader`, `is_full`) VALUES
+(3, '2015-10-12', 'Ann Brau & Rebecca Christiansen', 1),
+(4, '2016-01-18', 'Joyce Getchell & Eileen Bock', 1),
+(5, '2016-03-07', 'Ann Brau & Mary Welle', 1),
+(6, '2016-06-20', 'Joyce Getchell', 0),
+(7, '2016-07-11', 'Tim & Christine Davis', 0),
+(8, '2016-10-10', 'Rebecca Christiansen and Ruby Montgomery', 0);
 
 -- --------------------------------------------------------
 
@@ -119,12 +117,12 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `applications`
 --
 ALTER TABLE `applications`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=17;
 --
 -- AUTO_INCREMENT for table `trip_dates`
 --
 ALTER TABLE `trip_dates`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=9;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=13;
 --
 -- AUTO_INCREMENT for table `users`
 --
