@@ -197,6 +197,31 @@
 			</div>			
 		</div>
 
+		<!-- Criminal History -->
+		<div class="pure-g apart-bottom">
+			<div class="pure-u-1-1">
+				<h2>Criminal History</h2>
+			</div>
+			<div class="pure-u-1-1">
+				<p>
+					I authorize the Minnesota (or state of my residence) Bureau of Criminal Apprehension to disclose all criminal history record information to Reiser Relief, Inc for the purpose of  volunteering  with this agency.
+				</p>
+				<p>
+					The expiration of this authorization shall be one year from the date of my signature.
+				</p>
+			</div>
+			<div class="pure-u-1-2">
+				<p>
+					Signature:
+				</p>
+			</div>
+			<div class="pure-u-1-2">
+				<p>
+					Date: <?php echo (date('l\, F jS\, Y')); ?>
+				</p>
+			</div>			
+		</div>	
+
 		<!-- Legal -->
 		<div class="pure-g apart-bottom">
 			<div class="pure-u-1-1">
@@ -257,7 +282,8 @@
 			<div class="pure-u-1-1">
 				<fieldset>
 					<label for="waiver-acceptance">
-			            <input id="waiver-acceptance" name = "waiver-acceptance" type="checkbox" class="pure-checkbox"> I have read, understood, and executed this waiver and release on <?php echo(date('l\, F jS\, Y')); ?>.</label>
+			            <input id="waiver-acceptance" name = "waiver-acceptance" type="checkbox" class="pure-checkbox"> I have read, understood, and executed this waiver and release on <?php echo(date('l\, F jS\, Y')); ?>.
+					</label>
 			        <button type="submit" class="pure-button" id = "submit-button" disabled>Submit Application</button>
 				</fieldset>
 			</div>	
