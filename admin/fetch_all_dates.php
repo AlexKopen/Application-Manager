@@ -10,7 +10,7 @@ $result = $conn->query($sql);
 if ($result->num_rows > 0) {
 
     echo '<table class = "dates">';
-    echo '<tr class = "first-tr"><td>Trip</td><td>Manage</td></tr>';
+    echo '<tr class = "first-tr"><td>Trip</td><td>Leader</td><td>Status</td><td>Manage</td></tr>';
     $oddRow = true;
 
     // output data of each row
@@ -33,13 +33,27 @@ if ($result->num_rows > 0) {
         echo $tripDateFormatted;
         echo '</td>';
         echo '<td>';
-        echo '<div class = "admin-button delete-button" id = "' . $row['date'] . '">Delete</div>';
+        echo $row['leader'];
+        echo '</td>';
+
+        echo '<td>';
+        if ($row['is_full']){
+            echo ('<p>Full</p>');
+        } else {
+            echo ('<p>Open</p>');
+        }
+        echo '</td>'; 
+
+        echo '<td>';
+        echo '<p class = "admin-button delete-button" id = "' . $row['date'] . '">Delete</p>';
 
         if ($row['is_full']){
-            echo '<div class = "admin-button open-button" id = "' . $row['date'] . '">Mark as Open</div>';
+            echo '<p class = "admin-button open-button" id = "' . $row['date'] . '">Mark as Open</p>';
         } else {
-            echo '<div class = "admin-button full-button" id = "' . $row['date'] . '">Mark as Full</div>';
-        }        
+            echo '<p class = "admin-button full-button" id = "' . $row['date'] . '">Mark as Full</p>';
+        }
+
+        echo '<p class = "admin-button trip-leader-button" id = "' . $row['date'] . '">Change Trip Leader</p>';       
         
         echo '</td>';              
         echo '</tr>';

@@ -27,6 +27,8 @@
 					<?php
 						require ('generate_dates.php');
 					?>
+					<h2>Trip Leader</h2>
+					<input name = "leader" />
 					<input id = "add-trip-submit" type = "submit" value="Add">
 				</form>
 			</div>			
