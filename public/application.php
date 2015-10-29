@@ -211,12 +211,12 @@
 				</p>
 			</div>
 			<div class="pure-u-1-2">
-				<p>
-					Signature:
-				</p>
+				<div id="signature"></div>
+				<button type = "button" class="pure-button" id = "clear">Clear Signature</button>
+				<textarea id="svg-data" name = "svg-data"></textarea>
 			</div>
 			<div class="pure-u-1-2">
-				<p>
+				<p id="criminal-date">
 					Date: <?php echo (date('l\, F jS\, Y')); ?>
 				</p>
 			</div>			
@@ -297,7 +297,9 @@
 	 ?>
 </script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="app.submit.js"></script>
+<script src="js/app.submit.js"></script>
+<script src="js/jSignature.min.js"></script>
+<script src="js/signature.functionality.js"></script>
 
 </body>	
 </html>
