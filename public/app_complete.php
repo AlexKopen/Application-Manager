@@ -5,6 +5,11 @@
 
 <div class="container" id = "app-complete">
 	<?php
+
+		if (!isset($_GET['success']) && !isset($_GET['trip'])){
+			echo ('<h1>There was an error submitting your application.</h1>');
+		}
+
 		if ($_GET['success'] == 'true'){
 
 			$tripDate = new DateTime($_GET['trip']);
