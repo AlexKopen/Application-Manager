@@ -3,6 +3,8 @@
  ?>
 <body>
 
+<?php require ('generate_trip_variables.php'); ?>
+
 <div class="container" id = "app">
 
 	<!--Details-->
@@ -22,14 +24,6 @@
 						<td> 
 						<!--Fetch the trip date-->
 							<?php
-								// Check for a trip date being manipulated in the DOM or URL
-								if (!preg_match('/^\d{4}-\d{2}-\d{2}$/', $_GET['trip'])) {
-									header("Location: index.php"); 
-									die("Redirecting to: index.php"); 	
-								}
-
-								$tripDate = new DateTime($_GET['trip']);
-								$tripDateFormatted = $tripDate->format('l\, F jS\, Y');
 								echo ($tripDateFormatted);
 							?>
 						</td>
@@ -296,7 +290,7 @@
 
 <script type="text/javascript">
 	<?php
-		echo('var tripData = \'' . $_GET['trip'] . '\';');
+		echo('var tripData = \'' . $unformattedDate . '\';');
 	 ?>
 </script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>

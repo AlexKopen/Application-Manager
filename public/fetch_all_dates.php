@@ -1,8 +1,6 @@
-<?php 
-    require ('connect.php'); 
-?>
+<?php require ('connect.php'); ?>
 
- <?php 
+<?php 
 
 $sql = "SELECT * FROM trip_dates WHERE date >= CURDATE() ORDER BY date ASC";
 
@@ -11,23 +9,13 @@ $result = $conn->query($sql);
 if ($result->num_rows > 0) {
 
     echo '<table class = "dates pure-table pure-table-bordered"><thead><tr><th>Trip Date</th><th>Trip Leader</th><th>Status</th></tr></thead><tbody>';
-    $oddRow = true;
 
     while($row = $result->fetch_assoc()) {
 
         $tripDate = new DateTime($row['date']);
-        $tripDateFormatted = $tripDate->format('l\, F jS\, Y');
-        
-        if ($oddRow){
-            echo '<tr class = "odd-tr">';
-            $oddRow = false;
+        $tripDateFormatted = $tripDate->format('l\, F jS\, Y');        
 
-        } else {
-            echo '<tr>';
-            $oddRow = true;
-       
-        }
-
+        echo '<tr>';
         echo '<td>';
         echo $tripDateFormatted;
         echo '</td>';
@@ -40,13 +28,12 @@ if ($result->num_rows > 0) {
         if ($row['is_full']){
             echo '<span class = "full">Trip is full</span>';
         } else {
-            echo ('<a class="apply-link" href = "application.php?trip=' . $row['date'] . '">Apply</a>');
+            echo ('<a class="apply-link" href = "application.php?id=' . $row['id'] . '">Apply</a>');
         }
 
         echo ('</p></div>');
         echo '</td>';              
         echo '</tr>';
-
     }
 
     echo '</tbody></table>';
