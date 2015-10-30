@@ -112,6 +112,10 @@ a {
 	resize: vertical;
 }
 
+#app #italic {
+	font-style: italic;
+}
+
 #app #legal-name {
     width: 300px;
     margin-top: 0;
