@@ -19,6 +19,14 @@ if ($result->num_rows == 1) {
     while($row = $result->fetch_assoc()) {
         
         $unformattedDate = $row['date'];
+        $currentDate = date('Y-m-d');
+
+        if ($unformattedDate < $currentDate){
+            // Not a valid date
+            header("Location: index.php");
+            die("Redirecting to: index.php");   
+        }
+
         $tripDate = new DateTime($row['date']);
         $tripDateFormatted = $tripDate->format('l\, F jS\, Y');        
     }
