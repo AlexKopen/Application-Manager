@@ -2,14 +2,15 @@
 
 require ('connect.php');
 
+if (!isset($_GET['name']) || !isset($_GET['trip']) || !isset($_GET['json'])){
+	echo ('<h1>There was an error submitting your application.</h1>');
+	die();
+}
+
 $name = $_GET['name'];
 $date = date('Y-m-d');
 $trip = $_GET['trip'];
 $json = $_GET['json'];
-
-if (!isset($name) && !isset($date) && !isset($trip) && !isset($json)){
-	echo ('<h1>There was an error submitting your application.</h1>');
-}
 
 $sql = "INSERT INTO applications (name, date, trip, json) VALUES ('$name', '$date', '$trip', '$json')";
 
