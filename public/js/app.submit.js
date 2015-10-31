@@ -30,7 +30,7 @@ $(document).ready(function() {
 
 		$.ajax({
 			url: 'application_insertion.php',
-			type: 'GET',
+			type: 'POST',
 			data: { name: nameData, trip: tripData, json: jsonData},
 			success: function (data){
 				data = $.trim(data);
