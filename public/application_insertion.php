@@ -25,6 +25,10 @@ if ($conn->query($sql) === TRUE) {
     echo ('<h1>There was an error submitting your application.</h1>');
 }
 
+unset($name);
+unset($trip);
+unset($json);
+
 $conn->close();
 
  ?>
