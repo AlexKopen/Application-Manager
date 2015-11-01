@@ -1,8 +1,8 @@
+<?php require ('generate_trip_variables.php'); ?>
+
 <?php require ('header.php'); ?>
 
 <body>
-
-<?php require ('generate_trip_variables.php'); ?>
 
 <div class="container" id = "app">
 

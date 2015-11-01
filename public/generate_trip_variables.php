@@ -1,7 +1,5 @@
-<?php require ('connect.php'); ?>
-
 <?php
-
+require ('connect.php');
 // Generate all trip variables to be used on the application page and check for any invalid ids being passed by the user
 
 $id = (int) $_GET['id'];
