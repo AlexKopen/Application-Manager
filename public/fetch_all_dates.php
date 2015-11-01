@@ -12,7 +12,7 @@ $result = $conn->query($sql);
 // Output information via a table
 if ($result->num_rows > 0) {
 
-    echo ('<table class = "dates pure-table pure-table-bordered"><thead><tr>)<th>Trip Date</th><th>Trip Leader</th><th>Status</th></tr></thead><tbody>');
+    echo ('<table class = "dates pure-table pure-table-bordered"><thead><tr><th>Trip Date</th><th>Trip Leader</th><th>Status</th></tr></thead><tbody>');
 
     while($row = $result->fetch_assoc()) {
 
