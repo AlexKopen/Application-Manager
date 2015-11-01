@@ -31,15 +31,15 @@ $(document).ready(function() {
 		$.ajax({
 			url: 'application_insertion.php',
 			type: 'POST',
-			data: { name: nameData, trip: tripData, json: jsonData},
+			data: { name: nameData, trip: tripDate, json: jsonData},
 			success: function (data){
 				data = $.trim(data);
 				if(data == 'success'){
-					window.location.replace('app_complete.php?success=true&trip=' + tripData);
+					window.location.replace('app_complete.php?success=true&trip=' + tripDate);
 				}else{
 					window.location.replace('app_complete.php?success=false');
 				}
-			}			
+			}
 		});
 
 		event.preventDefault();

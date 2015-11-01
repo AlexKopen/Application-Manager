@@ -1,6 +1,5 @@
-<?php 
-	require ('header.php');
- ?>
+<?php require ('header.php'); ?>
+
 <body>
 
 <?php require ('generate_trip_variables.php'); ?>
@@ -21,12 +20,7 @@
 				</thead>
 				<tbody>
 					<tr>
-						<td> 
-						<!--Fetch the trip date-->
-							<?php
-								echo ($tripDateFormatted);
-							?>
-						</td>
+						<td><?php echo ($tripDateFormatted); ?></td>
 						<td>$125.00</td>
 						<td>$725.00</td>
 					</tr>
@@ -289,14 +283,12 @@
 </div>
 
 <script type="text/javascript">
-	<?php
-		echo('var tripData = \'' . $unformattedDate . '\';');
-	 ?>
+	<?php echo('var tripDate = \'' . $unformattedDate . '\';'); ?>
 </script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="js/app.submit.js"></script>
 <script src="js/jSignature.min.js"></script>
 <script src="js/signature.functionality.js"></script>
+<script src="js/app.submit.js"></script>
 
 </body>	
 </html>

@@ -1,5 +1,6 @@
 <?php 
 
+	// Change these variables to match the current server's database
 	$servername = "localhost";
 	$username = "root";
 	$password = "";
@@ -12,5 +13,5 @@
 	    die("Connection failed: " . $conn->connect_error);
 	}
 
- ?>
+?>
  
