@@ -1,7 +1,20 @@
-$(document).ready(function() {
+var initializeUIElements = function(){
+	$( ".datepicker" ).datepicker();
 
-	// Delete button is clicked
-	$('#open-trips').on('click', '.delete-button', function() {
+    $( ".dialog" ).dialog({
+      autoOpen: false
+    });
+}
+
+var resetGrid = function(data){
+	$(".dialog").dialog("destroy");
+	$('#open-trips').html(data);
+	initializeUIElements();
+	bindAdminButtonEvents();
+}
+
+var bindAdminButtonEvents = function(){
+	$('.delete-button').on('click', function() {
 
 		// Date to remove from delete button's id attribute
 		var removeDate = $(this).attr('id');
@@ -17,17 +30,18 @@ $(document).ready(function() {
 					url: 'fetch_all_dates.php',
 					type: 'POST',
 					dataType: 'html',
-					success: function (data){
-						$('#open-trips').html(data);
+					success: function(data){
+						resetGrid(data);
 					}
 				});		
 			}
 		});
+	// Delete button is clicked
 		
 	});
 
 	// Mark as Full button is clicked
-	$('#open-trips').on('click', '.full-button', function() {
+	$('.full-button').on('click', function() {
 
 		// Date to select
 		var removeDate = $(this).attr('id');
@@ -43,8 +57,8 @@ $(document).ready(function() {
 					url: 'fetch_all_dates.php',
 					type: 'POST',
 					dataType: 'html',
-					success: function (data){
-						$('#open-trips').html(data);
+					success: function(data){
+						resetGrid(data);
 					}
 				});		
 			}
@@ -53,7 +67,7 @@ $(document).ready(function() {
 	});
 
 	// Mark as Open button is clicked
-	$('#open-trips').on('click', '.open-button', function() {
+	$('.open-button').on('click', function() {
 
 		// Date to select
 		var removeDate = $(this).attr('id');
@@ -69,8 +83,8 @@ $(document).ready(function() {
 					url: 'fetch_all_dates.php',
 					type: 'POST',
 					dataType: 'html',
-					success: function (data){
-						$('#open-trips').html(data);
+					success: function(data){
+						resetGrid(data);
 					}
 				});		
 			}
@@ -79,7 +93,7 @@ $(document).ready(function() {
 	});
 
 	// Change Trip Leader button is clicked
-	$('#open-trips').on('click', '.trip-leader-button', function() {
+	$('.trip-leader-button').on('click', function() {
 
 		var newName = prompt("Please enter a new trip leader");
 
@@ -97,13 +111,24 @@ $(document).ready(function() {
 					url: 'fetch_all_dates.php',
 					type: 'POST',
 					dataType: 'html',
-					success: function (data){
-						$('#open-trips').html(data);
+					success: function(data){
+						resetGrid(data);
 					}
 				});		
 			}
 		});
 		
+	});
+}
+
+$(document).ready(function() {
+
+	initializeUIElements();
+	bindAdminButtonEvents();
+
+	//handle click events on the "Manage" buttons ... shows a jquery UI dialog box
+	$( "#open-trips" ).on("click", ".dialog-container button", function(event) {
+		$("div[id=" + $(event.target).attr("for") + "]").dialog("open");
 	});
 
 	// Add trip form is submitted
@@ -116,7 +141,7 @@ $(document).ready(function() {
 				type: 'POST',
 				dataType: 'html',
 				success: function (data){
-					$('#open-trips').html(data);
+					resetGrid(data);
 				}
 			});
 

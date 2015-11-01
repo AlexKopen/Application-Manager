@@ -1,0 +1,19 @@
+span.ui-button-icon-primary.ui-icon.ui-icon-closethick {
+    display: none;
+}
+
+button.ui-button.ui-widget.ui-state-default.ui-corner-all.ui-button-icon-only.ui-dialog-titlebar-close {
+    float: right;
+    padding:4px;
+}
+
+.ui-dialog-titlebar.ui-widget-header.ui-corner-all.ui-helper-clearfix.ui-draggable-handle {
+    padding: 7px;
+    border: none;
+    border-radius: 0;
+    background-color: #cbcbcb !important;
+}
+
+.dialog{
+	border:none;
+}

@@ -8,7 +8,7 @@
 	<title>Application Manager</title>
 	<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
-	<link rel="stylesheet" type="text/css" href="appstyle.css">
+	<link rel="stylesheet" type="text/css" href="./css/appstyle.css">
 </head>
 <body>
 
@@ -53,7 +53,7 @@
  ?>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="app.display.js"></script>
+<script src="./js/app.display.js"></script>
 
 <?php 
 	require ('footer.php'); 

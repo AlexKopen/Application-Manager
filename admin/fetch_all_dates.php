@@ -9,8 +9,8 @@ $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
 
-    echo '<table class = "dates">';
-    echo '<tr class = "first-tr"><td>Trip</td><td>Leader</td><td>Status</td><td>Manage</td></tr>';
+    echo '<table class="pure-table"><thead>';
+    echo '<tr><th>Trip</th><th>Leader</th><th>Status</th><th>Manage</th></tr></thead><tbody>';
     $oddRow = true;
 
     // output data of each row
@@ -18,23 +18,8 @@ if ($result->num_rows > 0) {
 
 		$tripDate = new DateTime($row['date']);
     	$tripDateFormatted = $tripDate->format('l\, F jS\, Y');
-        
-        if ($oddRow){
-            echo '<tr class = "odd-tr">';
-            $oddRow = false;
-
-        } else {
-            echo '<tr>';
-            $oddRow = true;
-       
-        }
-
-        echo '<td>';
-        echo $tripDateFormatted;
-        echo '</td>';
-        echo '<td>';
-        echo $row['leader'];
-        echo '</td>';
+        echo '<tr><td>' . $tripDateFormatted . '</td>';
+        echo '<td>' . $row['leader'] . '</td>';
 
         echo '<td>';
         if ($row['is_full']){
@@ -44,7 +29,8 @@ if ($result->num_rows > 0) {
         }
         echo '</td>'; 
 
-        echo '<td>';
+        echo '<td class="dialog-container"><button class="pure-button" for="dialog' . $row['date'] . '">Manage</button>';
+        echo '<div title="Choose an action" class="dialog" id = "dialog' . $row['date'] . '">';
         echo '<p class = "admin-button delete-button" id = "' . $row['date'] . '">Delete</p>';
 
         if ($row['is_full']){
@@ -55,12 +41,12 @@ if ($result->num_rows > 0) {
 
         echo '<p class = "admin-button trip-leader-button" id = "' . $row['date'] . '">Change Trip Leader</p>';       
         
-        echo '</td>';              
+        echo '</div></td>';              
         echo '</tr>';
 
     }
 
-    echo '</table>';
+    echo '</tbody></table>';
 
 } else {
     echo '<p>No Dates Found</p>';

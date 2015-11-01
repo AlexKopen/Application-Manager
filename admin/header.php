@@ -2,9 +2,12 @@
 <html>
 <head>
 	<title>Application Manager</title>
-	<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato">
+	<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+	<link rel="stylesheet" type="text/css" href="./css/jquery-ui.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/jquery-ui.theme.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/jquery-ui-overrides.css">
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
 <body>
 
@@ -13,7 +16,7 @@
 		<div class="pure-g">
 			<div class="pure-u-1-2" id = "left-header">
 				<div id = "logo-container">
-					<img src="logo.png">
+					<img src="./images/logo.png">
 				</div>
 			</div>
 
