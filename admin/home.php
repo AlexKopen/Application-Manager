@@ -1,9 +1,7 @@
-<?php 
-	require ('private.php'); 
-?>
+<?php
 
-<?php 
-	require ('header.php'); 
+require ('private.php');
+require ('header.php');
 ?>
 
 <div class="container">

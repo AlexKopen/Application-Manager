@@ -1,8 +1,5 @@
 <?php 
-    require ('private.php'); 
-?>
-
-<?php
+require ('private.php'); 
 
 $date = $_GET['date'];
 

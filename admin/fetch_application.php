@@ -1,8 +1,6 @@
-<?php 
-    require ('private.php'); 
-?>
+<?php
 
-<?php 
+require ('private.php'); 
 
 $id = htmlspecialchars($_GET['id']);
 $tripDateFormatted;

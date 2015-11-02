@@ -97,6 +97,11 @@ var bindAdminButtonEvents = function(){
 
 		var newName = prompt("Please enter a new trip leader");
 
+		// Do nothing if no valid new name is entered
+		if ($.trim(newName) == ''){
+			return;
+		}
+
 		// Date to select
 		var removeDate = $(this).attr('id');
 
@@ -105,7 +110,6 @@ var bindAdminButtonEvents = function(){
 			type: 'GET',
 			data: {date: removeDate, name: newName},
 			success: function (data){
-				console.log(data);
 				// Update table
 				$.ajax({
 					url: 'fetch_all_dates.php',
@@ -133,19 +137,23 @@ $(document).ready(function() {
 
 	// Add trip form is submitted
 	$('#add-trip').submit(function(event) {
-		$.post('add_trip.php', $('#add-trip').serialize(), function(data) {
 
-			// Update table
-			$.ajax({
-				url: 'fetch_all_dates.php',
-				type: 'POST',
-				dataType: 'html',
-				success: function (data){
-					resetGrid(data);
-				}
-			});
-
-		});
+		$.ajax({
+			url: 'add_trip.php',
+			type: 'POST',
+			data: { date: $( "input[name*='date']" ).val(), leader: $( "input[name*='leader']" ).val()},
+			success: function (data){
+				// Update table
+				$.ajax({
+					url: 'fetch_all_dates.php',
+					type: 'POST',
+					dataType: 'html',
+					success: function (data){
+						resetGrid(data);
+					}
+				});
+			}
+		});		
 
 		event.preventDefault();
 	});

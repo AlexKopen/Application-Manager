@@ -1,8 +1,6 @@
 <?php 
-    require ('private.php'); 
-?>
 
-<?php 
+require ('private.php'); 
 
 $sql = "SELECT * FROM trip_dates ORDER BY date ASC";
 $result = $conn->query($sql);

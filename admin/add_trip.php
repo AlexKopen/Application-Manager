@@ -1,22 +1,16 @@
-<?php 
-	require ('private.php');
- ?>
+<?php
 
+require ('private.php');
 
-<?php 
+list($month, $date, $year) = explode('/', $_POST['date']);
+$date = $year . '-' . $month . '-' . $date;
 
-$year = $_POST['year'];
-$month = $_POST['month'];
-$day = $_POST['day'];
 $leader = $_POST['leader'];
-
-$date = $year . '-' . $month . '-' . $day;
 
 $sql = "INSERT INTO trip_dates (date, leader) VALUES ('$date', '$leader')";
 
 if ($conn->query($sql) === TRUE) {
-	header("Location: home.php"); 
-	die("Redirecting to: home.php"); 
+	echo "added successfully";
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }

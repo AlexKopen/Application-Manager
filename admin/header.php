@@ -7,7 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="./css/jquery-ui.min.css">
 	<link rel="stylesheet" type="text/css" href="./css/jquery-ui.theme.min.css">
 	<link rel="stylesheet" type="text/css" href="./css/jquery-ui-overrides.css">
-	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 

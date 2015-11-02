@@ -1,16 +1,14 @@
 <?php 
-    require ('private.php'); 
-?>
 
-<?php 
+require ('private.php'); 
 
 $sql = "SELECT * FROM applications ORDER BY trip DESC";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
 
-    $tripIndex = 0;
     $currentTrip = '';
+    $index = 0;
 
     // output data of each row
     while($row = $result->fetch_assoc()) {   
@@ -21,18 +19,25 @@ if ($result->num_rows > 0) {
 		$applyDate = new DateTime($row['date']);
     	$applyDateFormatted = $applyDate->format('l\, F jS\, Y');
 
-        if ($row['trip'] != $currentTrip){
-            echo '</table>';
+        // First trip
+        if ($index == 0){
+            $index++;
+            echo '<h3>Trip of ' . $tripDateFormatted . '</h3>';
+            $currentTrip = $row['trip'];
         }
 
-        echo '<h3>Trip of ' . $tripDateFormatted . '</h3>';
-        echo '<table class = "pure-table"><thead>';
-        echo '<tr><th>Name</th><th>Trip</th><th>Submitted</th><th>Access</th></tr></thead>';
-        $currentTrip = $row['trip'];
-        $tripIndex++;
+        if ($row['trip'] != $currentTrip){
+            echo '</table>';
+            $currentTrip = $row['trip'];
+            echo '<h3>Trip of ' . $tripDateFormatted . '</h3>';
+        }
+
+        echo '<table class = "pure-table" id = "single-applicant"><thead>';
+        echo '<tr><th>Name</th><th>Submitted</th><th>Access</th></tr></thead>';
+        $currentTrip = $row['trip'];    
 
         echo '<tr>';
-        echo '<td>' . $row['name'] . '</td>' . '<td>' . $tripDateFormatted . '</td>' . '<td>' . $applyDateFormatted . '</td>';
+        echo '<td>' . $row['name'] . '</td>' . '<td>' . $applyDateFormatted . '</td>';
         echo '<td>' . '<a href = "display_application.php?id=' . $row['id'] . '">View Application</a>' . '</td>';
         echo '</tr>';        
 
