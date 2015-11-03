@@ -147,15 +147,15 @@
 			<div class="pure-u-1-1">
 				<fieldset class="pure-group">
 					<label>What gifts or strengths do you have that would add to the mission experience?</label>
-					<textarea placeholder="Please respond in a few paragraphs at most."></textarea>
+					<textarea placeholder="Please respond in a few paragraphs at most." name = "gifts"></textarea>
 					<label>Please list three expectations for your mission experience.</label>
-					<textarea placeholder="Please respond in a few paragraphs at most."></textarea>
+					<textarea placeholder="Please respond in a few paragraphs at most." name = "expectations"></textarea>
 					<label>Is your family supportive of you seeking a mission experience? Please explain.</label>
-					<textarea placeholder="Please respond in a few paragraphs at most."></textarea>
+					<textarea placeholder="Please respond in a few paragraphs at most." name = "supportive"></textarea>
 					<label>Do you have any concerns or fears about this experience? Please explain.</label>
-					<textarea placeholder="Please respond in a few paragraphs at most."></textarea>
+					<textarea placeholder="Please respond in a few paragraphs at most." name = "concerns"></textarea>
 					<label>Do you have any health issues that the team should know about?</label>
-					<textarea placeholder="Please respond in a few paragraphs at most."></textarea>
+					<textarea placeholder="Please respond in a few paragraphs at most." name = "health"></textarea>
 				</fieldset>
 			</div>
 		</div>
