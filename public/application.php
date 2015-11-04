@@ -33,7 +33,7 @@
 		</div>
 		<div class="pure-u-1-1 apart-bottom">
 			<h2>Expectations</h2>
-			<p>You are willing to be uncomfortable.  You seek meaning and significance for your life.  You want to serve others and are open to God using this trip to shape you.  You agree that this trip is not about you or your purpose but God’s purpose for your life.  You are willing to hold babies, play with children, visit with elderly, go deep into the poorest reaches of Haiti and put others first.  You will be hot and dirty at the end of each day.  You understand that what you see and what you experience can change your life.  You agree to respect your team members and extend the Grace God has extended us when there are differences between us.</p>
+			<p>You are willing to be uncomfortable.  You seek meaning and significance for your life.  You want to serve others and are open to God using this trip to shape you.  You agree that this trip is not about you or your purpose but God's purpose for your life.  You are willing to hold babies, play with children, visit with elderly, go deep into the poorest reaches of Haiti and put others first.  You will be hot and dirty at the end of each day.  You understand that what you see and what you experience can change your life.  You agree to respect your team members and extend the Grace God has extended us when there are differences between us.</p>
 	</div>
 
 	<!-- Personal Profile -->
@@ -235,13 +235,13 @@
 						Releases Reiser Relief, its officers, directors, employees, agents or representatives from any claims whatsoever relating to the mission trip to Haiti;
 					</li>
 					<li>
-						Agrees not to sue or otherwise hold Reiser Relief responsible for any injury, damage, or loss resulting to the undersigned or the undersigned’s property in connection with the undersigned’s participation in the missions trip to the Country;
+						Agrees not to sue or otherwise hold Reiser Relief responsible for any injury, damage, or loss resulting to the undersigned or the undersigned's property in connection with the undersigned's participation in the missions trip to the Country;
 					</li>
 					<li>
 						Accepts full responsibility for luggage and other belongings brought on the missions trip by the undersigned;
 					</li>
 					<li>
-						Agrees to submit any dispute, claim or cause of action arising out of the undersigned’s participation in the mission trip to Haiti solely to a Christian arbitration panel, agreeing that lawsuits among and between Christians is prohibited by Scriptures; and
+						Agrees to submit any dispute, claim or cause of action arising out of the undersigned's participation in the mission trip to Haiti solely to a Christian arbitration panel, agreeing that lawsuits among and between Christians is prohibited by Scriptures; and
 					</li>
 					<li>
 						Agrees to be responsible for any injuries, damages or losses caused by the undersigned while the undersigned is traveling with representatives of Reiser Relief or while the undersigned is in the Country.
@@ -251,7 +251,7 @@
 					B.	The undersigned acknowledges that Reiser Relief has recommended that the undersigned purchase trip, health, accident and baggage insurance in connection with the missions trip, and that the undersigned obtain a physical examination and proper inoculations prior to going on the mission trip.
 				</p>
 				<p>
-					C.	The undersigned acknowledges that he/she has been informed that United States citizens traveling outside of the United States are required to carry documentation of United States citizenship, which may include a valid passport or notarized copy of the citizen’s birth certificate with a raised seal, and a valid picture I.D. (such as a driver’s license).
+					C.	The undersigned acknowledges that he/she has been informed that United States citizens traveling outside of the United States are required to carry documentation of United States citizenship, which may include a valid passport or notarized copy of the citizen's birth certificate with a raised seal, and a valid picture I.D. (such as a driver's license).
 				</p>
 				<p>
 					If you have any questions or cannot comply with any of the Expectations or Release, please explain or contact us.  We are excited at the possibility of having you with us!
