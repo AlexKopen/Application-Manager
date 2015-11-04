@@ -3,7 +3,7 @@ require ('private.php');
 
 $date = $_GET['date'];
 
-$sql = "UPDATE `application-manager`.`trip_dates` SET `is_full` = '1' WHERE `trip_dates`.`date` = '$date'";
+$sql = "UPDATE `trip_dates` SET `is_full` = '1' WHERE `date` = '$date'";
 $result = $conn->query($sql);
 
 if ($conn->query($sql) === TRUE) {

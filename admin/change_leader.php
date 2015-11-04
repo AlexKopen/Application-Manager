@@ -5,7 +5,7 @@ require ('private.php');
 $date = $_GET['date'];
 $name = $_GET['name'];
 
-$sql = "UPDATE `application-manager`.`trip_dates` SET `leader` = '$name' WHERE `trip_dates`.`date` = '$date'";
+$sql = "UPDATE `trip_dates` SET `leader` = '$name' WHERE `date` = '$date'";
 $result = $conn->query($sql);
 
 if ($conn->query($sql) === TRUE) {

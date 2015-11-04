@@ -51,7 +51,6 @@ var bindAdminButtonEvents = function(){
 			type: 'GET',
 			data: {date: removeDate},
 			success: function (data){
-				console.log(data);
 				// Update table
 				$.ajax({
 					url: 'fetch_all_dates.php',
@@ -77,7 +76,6 @@ var bindAdminButtonEvents = function(){
 			type: 'GET',
 			data: {date: removeDate},
 			success: function (data){
-				console.log(data);
 				// Update table
 				$.ajax({
 					url: 'fetch_all_dates.php',
