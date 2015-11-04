@@ -3,7 +3,7 @@ $(document).ready(function() {
 
 	var jsonAsArray = $.parseJSON(jsonData);
 
-	var formInputs = $('form input, from textarea, form select');
+	var formInputs = $('form input, form textarea, form select');
 	var currentValue = '';
 
 	//Change value of input fields to match with the appropriate name from the JSON array
