@@ -18,6 +18,11 @@ a {
 	padding: 10px;
 }
 
+#login-container input{
+	width: 100%;
+	margin-top: 10px;
+}
+
 #header {
 	background: #272424;
 }

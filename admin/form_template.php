@@ -14,11 +14,7 @@
 				</thead>
 				<tbody>
 					<tr>
-						<td> <!--Fetch the trip date-->
-							<?php
-								echo ($tripDateFormatted);
-							?>
-						</td>
+						<td><?php echo ($tripDateFormatted); ?></td>
 						<td>$125.00</td>
 						<td>$725.00</td>
 					</tr>
@@ -64,7 +60,7 @@
 					<select name="gender">
 						<option value="Male">Male</option>
 						<option value="Female">Female</option>
-					</select>
+					</select>					
 				</fieldset>
 			</div>
 			<div class="pure-u-1-2">
@@ -183,6 +179,32 @@
 			</div>			
 		</div>
 
+		<!-- Criminal History -->
+		<div class="pure-g apart-bottom">
+			<div class="pure-u-1-1">
+				<h2>Criminal History</h2>
+			</div>
+			<div class="pure-u-1-1">
+				<p>
+					I authorize the Minnesota (or state of my residence) Bureau of Criminal Apprehension to disclose all criminal history record information to Reiser Relief, Inc for the purpose of  volunteering  with this agency.
+				</p>
+				<p>
+					The expiration of this authorization shall be one year from the date of my signature.
+				</p>
+				<p id = "italic">
+					Please sign below using your mouse or touch screen.
+				</p>
+			</div>
+			<div class="pure-u-1-2">
+				<?php echo ($signature); ?>
+			</div>
+			<div class="pure-u-1-2">
+				<p id="criminal-date">
+					Signed On: <?php echo ($applyDateFormatted); ?>
+				</p>
+			</div>			
+		</div>	
+
 		<!-- Legal -->
 		<div class="pure-g apart-bottom">
 			<div class="pure-u-1-1">
@@ -192,32 +214,32 @@
 				<p>
 					A. As a condition of being permitted to travel with Reiser Relief on, and participate in, a mission trip to Haiti, the undersigned hereby:
 				</p>
-					<ul>
-						<li>
-							Agrees to assume all normal and foreseeable risks associated with travel to, from and within the Country (including but not limited to natural disasters, terrorism, political unrest, and contraction of illness) and releases Reiser Relief from any responsibility of such risks;
-						</li>
-						<li>
-							Acknowledges that the carriers, hotels and other suppliers (the “suppliers”) providing services in connection with the missions trip are independent contractors and are not agents, employees or representatives of, or joint ventures with, Reiser Relief or its affiliates and releases Reiser Relief from any responsibility for the actions or omissions of such suppliers;
-						</li>
-						<li>
-							Agrees that Reiser Relief shall have no liability for any personal injury, property damage or other loss, accident, delay, inconvenience, or irregularity which may be caused by (a) any wrongful, negligent or unauthorized acts or omissions on the part of any of the suppliers or their agents, (b) any defect in or failure of any vehicle, equipment or instrument owned, operated or otherwise used by any supplier, or (c) any wrongful or negligent acts or omissions on the part of any other party not under the control of Reiser Relief;
-						</li>
-						<li>
-							Releases Reiser Relief, its officers, directors, employees, agents or representatives from any claims whatsoever relating to the mission trip to Haiti;
-						</li>
-						<li>
-							Agrees not to sue or otherwise hold Reiser Relief responsible for any injury, damage, or loss resulting to the undersigned or the undersigned’s property in connection with the undersigned’s participation in the missions trip to the Country;
-						</li>
-						<li>
-							Accepts full responsibility for luggage and other belongings brought on the missions trip by the undersigned;
-						</li>
-						<li>
-							Agrees to submit any dispute, claim or cause of action arising out of the undersigned’s participation in the mission trip to Haiti solely to a Christian arbitration panel, agreeing that lawsuits among and between Christians is prohibited by Scriptures; and
-						</li>
-						<li>
-							Agrees to be responsible for any injuries, damages or losses caused by the undersigned while the undersigned is traveling with representatives of Reiser Relief or while the undersigned is in the Country.
-						</li>
-					</ul>
+				<ul>
+					<li>
+						Agrees to assume all normal and foreseeable risks associated with travel to, from and within the Country (including but not limited to natural disasters, terrorism, political unrest, and contraction of illness) and releases Reiser Relief from any responsibility of such risks;
+					</li>
+					<li>
+						Acknowledges that the carriers, hotels and other suppliers (the “suppliers”) providing services in connection with the missions trip are independent contractors and are not agents, employees or representatives of, or joint ventures with, Reiser Relief or its affiliates and releases Reiser Relief from any responsibility for the actions or omissions of such suppliers;
+					</li>
+					<li>
+						Agrees that Reiser Relief shall have no liability for any personal injury, property damage or other loss, accident, delay, inconvenience, or irregularity which may be caused by (a) any wrongful, negligent or unauthorized acts or omissions on the part of any of the suppliers or their agents, (b) any defect in or failure of any vehicle, equipment or instrument owned, operated or otherwise used by any supplier, or (c) any wrongful or negligent acts or omissions on the part of any other party not under the control of Reiser Relief;
+					</li>
+					<li>
+						Releases Reiser Relief, its officers, directors, employees, agents or representatives from any claims whatsoever relating to the mission trip to Haiti;
+					</li>
+					<li>
+						Agrees not to sue or otherwise hold Reiser Relief responsible for any injury, damage, or loss resulting to the undersigned or the undersigned’s property in connection with the undersigned’s participation in the missions trip to the Country;
+					</li>
+					<li>
+						Accepts full responsibility for luggage and other belongings brought on the missions trip by the undersigned;
+					</li>
+					<li>
+						Agrees to submit any dispute, claim or cause of action arising out of the undersigned’s participation in the mission trip to Haiti solely to a Christian arbitration panel, agreeing that lawsuits among and between Christians is prohibited by Scriptures; and
+					</li>
+					<li>
+						Agrees to be responsible for any injuries, damages or losses caused by the undersigned while the undersigned is traveling with representatives of Reiser Relief or while the undersigned is in the Country.
+					</li>
+				</ul>
 				<p>
 					B.	The undersigned acknowledges that Reiser Relief has recommended that the undersigned purchase trip, health, accident and baggage insurance in connection with the missions trip, and that the undersigned obtain a physical examination and proper inoculations prior to going on the mission trip.
 				</p>
@@ -243,11 +265,10 @@
 			<div class="pure-u-1-1">
 				<fieldset>
 					<label for="waiver-acceptance">
-			            <input id="waiver-acceptance" name = "waiver-acceptance" type="checkbox" class="pure-checkbox"> I have read, understood, and executed this waiver and release on <?php echo(date('l\, F jS\, Y')); ?>.</label>
+			            <input id="waiver-acceptance" name = "waiver-acceptance" type="checkbox" class="pure-checkbox"> I have read, understood, and executed this waiver and release on <?php echo ($applyDateFormatted); ?>.
+					</label>
 				</fieldset>
 			</div>	
 		</div>
 	</form>	
 </div>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>

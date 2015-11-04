@@ -33,7 +33,7 @@
 </div>
 
 <?php 
-	require ('fetch_application.php'); 
+	require ('fetch_application.php');
  ?>
 
 <div class="container" id = "app">

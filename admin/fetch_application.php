@@ -26,6 +26,7 @@ if ($result->num_rows > 0) {
     	$applyDateFormatted = $applyDate->format('l\, F jS\, Y');
 
         $name = $row['name'];
+        $signature = $row['signature'];
     }
 } else {
     echo '0 results';
