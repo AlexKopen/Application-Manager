@@ -204,7 +204,6 @@
 			<div class="pure-u-1-2">
 				<div id="signature"></div>
 				<button type = "button" class="pure-button" id = "clear">Clear Signature</button>
-				<textarea id="svg-data" name = "svg-data"></textarea>
 			</div>
 			<div class="pure-u-1-2">
 				<p id="criminal-date">

@@ -21,17 +21,14 @@ $(document).ready(function() {
 	// Submit with AJAX
 	$('#applicant-form').submit(function(event) {
 
-		// Bind signature data to the hidden text box
-    	$('#svg-data').text($("#signature").jSignature('getData', 'svg')[1]);
-
+    	var signatureData = $("#signature").jSignature('getData', 'svg')[1];
 		var jsonData = JSON.stringify($(this).serializeArray());
-
 		var nameData = $.trim($( "input[name*='first-name']" ).val()) + ' ' + $.trim($( "input[name*='middle-name']" ).val()) + ' ' + $.trim($( "input[name*='last-name']" ).val());
 
 		$.ajax({
 			url: 'application_insertion.php',
 			type: 'POST',
-			data: { name: nameData, trip: tripDate, json: jsonData},
+			data: { name: nameData, trip: tripDate, json: jsonData, signature: signatureData},
 			success: function (data){
 				data = $.trim(data);
 				if(data == 'success'){

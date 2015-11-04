@@ -14,8 +14,9 @@ $name = $_POST['name'];
 $date = date('Y-m-d');
 $trip = $_POST['trip'];
 $json = $_POST['json'];
+$signature = $_POST['signature'];
 
-$sql = "INSERT INTO applications (name, date, trip, json) VALUES ('$name', '$date', '$trip', '$json')";
+$sql = "INSERT INTO applications (name, date, trip, json, signature) VALUES ('$name', '$date', '$trip', '$json', '$signature')";
 
 if ($conn->query($sql) === TRUE) {
 

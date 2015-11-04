@@ -124,10 +124,6 @@ a {
     height: 30px;
 }
 
-#app #svg-data{
-	display: none;
-}
-
 #app input#waiver-acceptance {
     width: 20px;
     display: inline-block;
