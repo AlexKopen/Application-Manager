@@ -22,7 +22,10 @@ $(document).ready(function() {
 	$('#applicant-form').submit(function(event) {
 
     	var signatureData = $("#signature").jSignature('getData', 'svg')[1];
-		var jsonData = JSON.stringify($(this).serializeArray());
+
+		var jsonData = encodeURIComponent(JSON.stringify($(this).serializeArray()));
+		jsonData = jsonData.replace(/'/g, "%27");
+
 		var nameData = $.trim($( "input[name*='first-name']" ).val()) + ' ' + $.trim($( "input[name*='middle-name']" ).val()) + ' ' + $.trim($( "input[name*='last-name']" ).val());
 
 		$.ajax({

@@ -1,7 +1,7 @@
 $(document).ready(function() {
 	//Display JSON as a form
 
-	var jsonAsArray = $.parseJSON(jsonData);
+	var jsonAsArray = $.parseJSON(decodeURIComponent(jsonData));
 
 	var formInputs = $('form input, form textarea, form select');
 	var currentValue = '';
