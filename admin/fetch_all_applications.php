@@ -23,17 +23,19 @@ if ($result->num_rows > 0) {
         if ($index == 0){
             $index++;
             echo '<h3>Trip of ' . $tripDateFormatted . '</h3>';
+            echo '<table class = "pure-table" id = "single-applicant"><thead>';
+            echo '<tr><th>Name</th><th>Submitted</th><th>Access</th></tr></thead>';
             $currentTrip = $row['trip'];
         }
 
         if ($row['trip'] != $currentTrip){
             echo '</table>';
+            echo '<table class = "pure-table" id = "single-applicant"><thead>';
+            echo '<tr><th>Name</th><th>Submitted</th><th>Access</th></tr></thead>';
             $currentTrip = $row['trip'];
             echo '<h3>Trip of ' . $tripDateFormatted . '</h3>';
         }
-
-        echo '<table class = "pure-table" id = "single-applicant"><thead>';
-        echo '<tr><th>Name</th><th>Submitted</th><th>Access</th></tr></thead>';
+        
         $currentTrip = $row['trip'];    
 
         echo '<tr>';
