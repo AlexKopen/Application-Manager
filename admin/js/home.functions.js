@@ -14,6 +14,8 @@ var resetGrid = function(data){
 }
 
 var bindAdminButtonEvents = function(){
+
+	// Delete button is clicked
 	$('.delete-button').on('click', function() {
 
 		// Date to remove from delete button's id attribute
@@ -36,7 +38,6 @@ var bindAdminButtonEvents = function(){
 				});		
 			}
 		});
-	// Delete button is clicked
 		
 	});
 
@@ -155,5 +156,83 @@ $(document).ready(function() {
 
 		event.preventDefault();
 	});
+
+	// Delete operation for a single application is clicked
+	$('.delete-link').on('click', function() {
+
+		var removeID = $(this).attr('id');
+
+		// Remove date from DB
+		$.ajax({
+			url: 'delete_application.php',
+			type: 'GET',
+			data: {id: removeID},
+			success: function (data){
+				console.log(data);
+				// Update visible applications
+				$.ajax({
+					url: 'fetch_all_applications.php',
+					type: 'POST',
+					dataType: 'html',
+					success: function(data){
+						$('#all-applications').html(data);
+					}
+				});
+
+				// Update trash
+				$.ajax({
+					url: 'fetch_all_trash.php',
+					type: 'POST',
+					dataType: 'html',
+					success: function(data){
+						$('#all-trash').html(data);
+					}
+				});					
+			}
+		});
+		
+	});
+
+	//Toggle trash display
+	$('#toggle-trash').on('click', function() {
+		$(this).text() === 'View' ? $(this).text('Hide') : $(this).text('View');
+		$('#all-trash').toggle();
+	});
+
+	// Restore operation for a single application is clicked
+	$('.restore-link').on('click', function() {
+
+		var removeID = $(this).attr('id');
+
+		// Remove date from DB
+		$.ajax({
+			url: 'restore_application.php',
+			type: 'GET',
+			data: {id: removeID},
+			success: function (data){
+				console.log(data);
+				// Update trash
+				$.ajax({
+					url: 'fetch_all_trash.php',
+					type: 'POST',
+					dataType: 'html',
+					success: function(data){
+						$('#all-trash').html(data);
+					}
+				});
+
+				// Update visible applications
+				$.ajax({
+					url: 'fetch_all_applications.php',
+					type: 'POST',
+					dataType: 'html',
+					success: function(data){
+						$('#all-applications').html(data);
+					}
+				});					
+			}
+		});
+		
+	});	
 
 });

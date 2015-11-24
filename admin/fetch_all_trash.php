@@ -2,7 +2,7 @@
 
 require ('private.php'); 
 
-$sql = "SELECT * FROM applications WHERE trash = 0 ORDER BY trip DESC";
+$sql = "SELECT * FROM applications WHERE trash = 1 ORDER BY trip DESC";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
@@ -41,7 +41,7 @@ if ($result->num_rows > 0) {
         echo '<tr>';
         echo '<td>' . $row['name'] . '</td>' . '<td>' . $applyDateFormatted . '</td>';
         echo '<td>' . '<a href = "display_application.php?id=' . $row['id'] . '">View Application</a>' . '</td>';
-        echo '<td class = "delete-link" id = "' . $row['id'] . '">Delete</td>';        
+        echo '<td class = "restore-link" id = "' . $row['id'] . '">Restore</td>';        
         echo '</tr>';        
 
     }

@@ -88,3 +88,21 @@ form {
 #single-applicant td {
 	width: 33.33%;
 }
+
+.restore-link, .delete-link, #toggle-trash{
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+.delete-link{
+	color: #d9534f;
+}
+
+#all-trash {
+	display: none;
+}
+
+#toggle-trash {
+	font-size: 20px;
+	color: #808080;
+}

@@ -37,10 +37,23 @@ require ('header.php');
 		<div class="pure-u-1-1">
 			<div class="mini-container">
 				<h1>Applications</h1>
-				<?php require ('fetch_all_applications.php'); ?>
+				<div id = "all-applications">
+					<?php require ('fetch_all_applications.php'); ?>
+				</div>
 			</div>
 		</div>
 	</div>
+
+	<div class="pure-g">
+		<div class="pure-u-1-1">
+			<div class="mini-container">
+				<h1>Trash <span id = "toggle-trash">View</span></h1>
+				<div id = "all-trash">
+					<?php require ('fetch_all_trash.php'); ?>
+				</div>
+			</div>
+		</div>
+	</div>	
 	
 
 </div>
