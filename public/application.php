@@ -42,7 +42,7 @@
 			<div class="pure-u-1-1">
 				<h2>Personal Information</h2>
 			</div>
-			<div class="pure-u-1-2">
+			<div class="pure-u-1-2 stack">
 				<fieldset class="pure-group">
 					<legend>Passport Information</legend>
 					<input type="text" name="first-name" placeholder="First" />
@@ -69,7 +69,7 @@
 					</select>					
 				</fieldset>
 			</div>
-			<div class="pure-u-1-2">
+			<div class="pure-u-1-2 stack">
 				<legend>Address</legend>
 				<fieldset class="pure-group">
 					<input type="text" name = "address" placeholder="Street Address"/>
@@ -165,7 +165,7 @@
 			<div class="pure-u-1-1">
 				<h2>References</h2>
 			</div>
-			<div class="pure-u-1-2">
+			<div class="pure-u-1-2 stack">
 				<fieldset class="pure-group">
 					<legend>Person 1</legend>
 					<input type="text" name = "reference1-name" placeholder = "Name"/>
@@ -174,7 +174,7 @@
 					<input type="text" name = "reference1-email" placeholder="Email Address" />					
 				</fieldset>
 			</div>
-			<div class="pure-u-1-2">
+			<div class="pure-u-1-2 stack">
 				<fieldset class="pure-group">
 					<legend>Person 2</legend>
 					<input type="text" name = "reference2-name" placeholder = "Name"/>

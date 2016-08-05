@@ -133,3 +133,11 @@ a {
 #app-complete.container{
 	max-width: 1000px;
 }
+
+
+@media (max-width: 1000px) {
+	.stack {
+		width: 100%;
+	}
+}
+
