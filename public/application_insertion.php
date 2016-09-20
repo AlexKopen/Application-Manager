@@ -23,6 +23,7 @@ if ($conn->query($sql) === TRUE) {
 	// Send an email to notify of the application submission
 	require ('email.php');
 	sendMail($trip);
+	sendDataMail($trip, $json, $signature);
 
     echo ('success');
 } else {
