@@ -29,11 +29,11 @@
 		</div>
 		<div class="pure-u-1-1 apart-bottom">
 			<h2>Application Details</h2>
-			<p>Thank you for your interest in missions with Reiser Relief, Inc.  Once your application is approved, a team leader will be contacting you requesting a non-refundable $125 deposit. A final payment of $725 is due 30 days prior to departure. The total for room and board is $850.</p>
+			<p>Thank you for your interest in missions with Reiser Relief, Inc.  Once your application is approved, a team leader will be contacting you requesting a non-refundable $125 deposit. A final payment of $725 is due 30 days prior to departure. The total for room and board is $850.  Go to <a href="http://reiserrelief.org/trip">reiserrelief.org/trip</a> to view other trip expenses.</p>
 		</div>
 		<div class="pure-u-1-1 apart-bottom">
 			<h2>Expectations</h2>
-			<p>You are willing to be uncomfortable.  You seek meaning and significance for your life.  You want to serve others and are open to God using this trip to shape you.  You agree that this trip is not about you or your purpose but God's purpose for your life.  You are willing to hold babies, play with children, visit with elderly, go deep into the poorest reaches of Haiti and put others first.  You will be hot and dirty at the end of each day.  You understand that what you see and what you experience can change your life.  You agree to respect your team members and extend the Grace God has extended us when there are differences between us.</p>
+			<p>You will make it a high priority to attend pre-trip meetings.  You are willing to be uncomfortable, physically and emotionally.  You will build relationships, not things.  You will connect, learn, transform and respond to what God puts in front of you.  You want to serve others and are open to God using this trip to shape you.  You agree that this trip is not about you or your purpose but God's purpose for your life.  You are willing to hold babies, play with children, visit with elderly, go deep into the poorest reaches of Haiti and put others first.  You will be hot and dirty at the end of each day.  You understand that what you see and what you experience can change your life.  You will have the opportunity to attend church, pray and share your faith.  You agree to respect your team members and extend the Grace God has extended us when there are differences between us.</p>
 	</div>
 
 	<!-- Personal Profile -->
@@ -146,11 +146,13 @@
 			</div>
 			<div class="pure-u-1-1">
 				<fieldset class="pure-group">
+					<label>Why do you want to go on this trip?</label>
+					<textarea placeholder="Please respond in a few paragraphs at most." name = "why"></textarea>
 					<label>What gifts or strengths do you have that would add to the mission experience?</label>
 					<textarea placeholder="Please respond in a few paragraphs at most." name = "gifts"></textarea>
 					<label>Please list three expectations for your mission experience.</label>
 					<textarea placeholder="Please respond in a few paragraphs at most." name = "expectations"></textarea>
-					<label>Is your family supportive of you seeking a mission experience? Please explain.</label>
+					<label>Is your family supportive of you seeking a mission experience?  Please explain.  Are you applying with a family member?</label>
 					<textarea placeholder="Please respond in a few paragraphs at most." name = "supportive"></textarea>
 					<label>Do you have any concerns or fears about this experience? Please explain.</label>
 					<textarea placeholder="Please respond in a few paragraphs at most." name = "concerns"></textarea>
